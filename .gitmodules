@@ -1,0 +1,3 @@
+[submodule "newsroom/notes"]
+	path = newsroom/notes
+	url = ../nabu-notes.git
