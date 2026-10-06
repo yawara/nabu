@@ -1,0 +1,9 @@
+---
+import Base from '../layouts/Base.astro';
+import { href } from '../lib/site';
+---
+
+<Base title="ページが見つかりません">
+  <h1 class="page-title">ページが見つかりません</h1>
+  <p class="page-intro">URL が変わったか、ページが削除された可能性があります。<a href={href('/')}>トップページ</a>からお探しください。</p>
+</Base>

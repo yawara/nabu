@@ -1,0 +1,49 @@
+---
+type NoticeKind = 'litigation' | 'allegation' | 'suicide' | 'developing';
+
+interface Props {
+  kinds: NoticeKind[];
+}
+
+const { kinds } = Astro.props;
+const order: NoticeKind[] = ['suicide', 'litigation', 'allegation', 'developing'];
+const shown = order.filter((kind) => kinds.includes(kind));
+---
+
+{
+  shown.length > 0 && (
+    <aside class="notices" aria-label="この記事についての注意">
+      {shown.map((kind) => (
+        <div class={`notice notice-${kind}`}>
+          {kind === 'litigation' && (
+            <p>
+              <strong>係争中の訴訟を扱っています。</strong>
+              記事中の主張は各当事者によるもので、裁判所が事実を認定したものではありません。Nabu
+              はどちらの主張も事実として扱わず、双方の主張と公開資料を並べて伝えます。
+            </p>
+          )}
+          {kind === 'allegation' && (
+            <p>
+              <strong>告発の内容を紹介しています。</strong>
+              ハラスメントなどについての記述は告発した人の主張であり、Nabu が事実関係を確認・認定したものではありません。
+            </p>
+          )}
+          {kind === 'suicide' && (
+            // 窓口の情報は厚生労働省「まもろうよ こころ」で 2026-10-06 に確認。定期的に確かめる（CLAUDE.md）
+            <p>
+              <strong>自殺や心身の不調に触れる記述があります。</strong>
+              つらい気持ちを抱えているときは、ひとりで抱え込まずに相談してください。#いのちSOS（0120-061-338、24時間）、よりそいホットライン（0120-279-338、24時間）などの窓口があります。
+              <a href="https://www.mhlw.go.jp/mamorouyokokoro/">厚生労働省「まもろうよ こころ」</a>
+              に電話・SNS の相談先がまとまっています。
+            </p>
+          )}
+          {kind === 'developing' && (
+            <p>
+              <strong>進行中の出来事です。</strong>新しい情報が確認でき次第、更新します。
+            </p>
+          )}
+        </div>
+      ))}
+    </aside>
+  )
+}

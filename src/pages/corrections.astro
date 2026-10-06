@@ -1,0 +1,31 @@
+---
+import Base from '../layouts/Base.astro';
+import { articleHref, formatDate, getArticles, href } from '../lib/site';
+
+const corrections = (await getArticles())
+  .flatMap((article) => article.data.corrections.map((c) => ({ ...c, article })))
+  .sort((a, b) => b.date.valueOf() - a.date.valueOf());
+---
+
+<Base title="訂正一覧" description="Nabu が記事を訂正・更新した記録の一覧です。">
+  <h1 class="page-title">訂正一覧</h1>
+  <p class="page-intro">
+    記事の誤りを直したときや、内容に大きく関わる更新をしたときの記録です。方針は<a href={href('/policy/')}>編集方針</a
+    >にあります。
+  </p>
+  {
+    corrections.length > 0 ? (
+      <ul class="correction-list">
+        {corrections.map((c) => (
+          <li>
+            <time datetime={c.date.toISOString()}>{formatDate(c.date)}</time>
+            <a href={articleHref(c.article)}>{c.article.data.title}</a>
+            <p>{c.text}</p>
+          </li>
+        ))}
+      </ul>
+    ) : (
+      <p>これまでに訂正はありません。</p>
+    )
+  }
+</Base>

@@ -1,0 +1,36 @@
+---
+import { getCollection } from 'astro:content';
+import { articleHref, formatDate, kindLabel, topicHref, type Article } from '../lib/site';
+
+interface Props {
+  articles: Article[];
+  /** トピック名のラベルを出すか（トピックページの中では出さない） */
+  showTopics?: boolean;
+}
+
+const { articles, showTopics = true } = Astro.props;
+const topicLabels = new Map((await getCollection('topics')).map((t) => [t.id, t.data.label]));
+---
+
+<ul class="article-list">
+  {
+    articles.map((article) => (
+      <li>
+        <p class="kicker">
+          <span class="kind">{kindLabel[article.data.kind]}</span>
+          {showTopics &&
+            article.data.topics.map((t) => <a href={topicHref(t.id)}>{topicLabels.get(t.id) ?? t.id}</a>)}
+        </p>
+        <h3>
+          <a href={articleHref(article)}>{article.data.title}</a>
+        </h3>
+        <p class="lead">{article.data.lead}</p>
+        <p class="meta">
+          <time datetime={article.data.published.toISOString()}>{formatDate(article.data.published)}</time>
+          {article.data.updated && <> ・更新 {formatDate(article.data.updated)}</>}
+          {article.data.draft && <span class="draft-badge">下書き</span>}
+        </p>
+      </li>
+    ))
+  }
+</ul>

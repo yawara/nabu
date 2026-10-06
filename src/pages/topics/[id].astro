@@ -1,0 +1,102 @@
+---
+import { getCollection, render } from 'astro:content';
+import ArticleList from '../../components/ArticleList.astro';
+import Notices from '../../components/Notices.astro';
+import SourceList from '../../components/SourceList.astro';
+import Timeline from '../../components/Timeline.astro';
+import Base from '../../layouts/Base.astro';
+import {
+  articlesInTopic,
+  formatDate,
+  formatPartialDate,
+  getArticles,
+  statusLabel,
+  type Topic,
+} from '../../lib/site';
+
+export async function getStaticPaths() {
+  const topics = await getCollection('topics');
+  return topics.map((topic) => ({ params: { id: topic.id }, props: { topic } }));
+}
+
+interface Props {
+  topic: Topic;
+}
+
+const { topic } = Astro.props;
+const { data } = topic;
+const { Content } = await render(topic);
+const articles = articlesInTopic(await getArticles(), topic.id);
+---
+
+<Base title={data.title} description={data.summary}>
+  <article class="topic">
+    <header class="article-header">
+      <p class="kicker">
+        <span class={`status status-${data.status}`}>{statusLabel[data.status]}</span>
+        <span>トピック</span>
+        <span>{formatDate(data.updated)} 更新</span>
+      </p>
+      <h1>{data.title}</h1>
+      <p class="lead">{data.summary}</p>
+    </header>
+
+    <Notices kinds={data.notices} />
+
+    {
+      articles.length > 0 && (
+        <section aria-labelledby="topic-articles-heading">
+          <h2 id="topic-articles-heading" class="section-heading">記事</h2>
+          <ArticleList articles={articles} showTopics={false} />
+        </section>
+      )
+    }
+
+    <section class="prose" aria-label="経緯と背景">
+      <Content />
+    </section>
+
+    {
+      data.people.length > 0 && (
+        <section aria-labelledby="people-heading">
+          <h2 id="people-heading" class="section-heading">主な関係者</h2>
+          <dl class="people">
+            {data.people.map((p) => (
+              <>
+                <dt>{p.name}</dt>
+                <dd>{p.role}</dd>
+              </>
+            ))}
+          </dl>
+        </section>
+      )
+    }
+
+    {
+      data.timeline.length > 0 && (
+        <section aria-labelledby="timeline-heading">
+          <h2 id="timeline-heading" class="section-heading">年表</h2>
+          <Timeline items={data.timeline} sources={data.sources} />
+        </section>
+      )
+    }
+
+    {
+      data.watch.length > 0 && (
+        <section aria-labelledby="watch-heading">
+          <h2 id="watch-heading" class="section-heading">今後の注目点</h2>
+          <ul class="watch">
+            {data.watch.map((w) => (
+              <li>
+                {w.date && <time datetime={w.date}>{formatPartialDate(w.date)}</time>}
+                {w.text}
+              </li>
+            ))}
+          </ul>
+        </section>
+      )
+    }
+
+    <SourceList sources={data.sources} />
+  </article>
+</Base>
