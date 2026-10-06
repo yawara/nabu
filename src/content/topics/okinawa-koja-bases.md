@@ -84,9 +84,10 @@ timeline:
       - https://www.okinawatimes.co.jp/articles/-/1938233
       - https://www.kantei.go.jp/jp/105/statement/2026/1005shoshinhyomei.html
   - date: 2026-10-06
-    text: 県議会の10月定例会が開会し、古謝氏が就任後初めての所信表明をする。
+    text: 県議会の10月定例会が開会し、古謝氏が就任後初めての所信表明をする。辺野古移設を「一刻も早い返還に向けた現実的な解決策として、容認する」と改めて述べる。
     sources:
       - https://www.okinawatimes.co.jp/articles/-/1938869
+      - https://www.asahi.com/articles/ASVB60T9QVB6UTIL00WM.html
 watch:
   - date: 2026-10-07
     text: 高市首相と古謝知事が首相官邸で面会する方向で調整されている（共同通信、10月5日時点）。米兵による事件への対応が話し合われる見通し。
@@ -307,6 +308,18 @@ sources:
     date: 2026-05-01
     accessed: 2026-10-06
     kind: news
+  - title: 沖縄の古謝県知事、米軍幹部らに抗議 海兵隊員が強盗殺人容疑で逮捕
+    publisher: 朝日新聞
+    url: https://www.asahi.com/articles/ASVB52HMTVB5UTIL008M.html
+    date: 2026-10-05
+    accessed: 2026-10-06
+    kind: news
+  - title: 古謝知事が所信表明で「県民に不安」 米兵逮捕、県議会は抗議決議へ
+    publisher: 朝日新聞
+    url: https://www.asahi.com/articles/ASVB60T9QVB6UTIL00WM.html
+    date: 2026-10-06
+    accessed: 2026-10-06
+    kind: news
 ---
 
 ## いまの状況
@@ -317,7 +330,7 @@ sources:
 
 就任から3日後の10月3日には、那覇市のホテルで女性が殺害され、財布などが奪われる事件が起きた。県警は4日、普天間飛行場所属の米海兵隊上等兵の男（20）を強盗殺人の疑いで緊急逮捕した。古謝氏は5日、日米両政府と米軍に抗議し、地位協定の見直しを含む抜本的な対策を求めた。
 
-10月6日には、県議会の10月定例会で就任後初めての所信表明をした。[沖縄タイムス](https://www.okinawatimes.co.jp/articles/-/1938869)によると、10年間で県民所得を500万円にする、4年間で子育て予算を1000億円に増やす、8年間で観光収入を2兆円にする、という三つの目標を掲げた。
+10月6日には、県議会の10月定例会で就任後初めての所信表明をした。[沖縄タイムス](https://www.okinawatimes.co.jp/articles/-/1938869)によると、10年間で県民所得を500万円にする、4年間で子育て予算を1000億円に増やす、8年間で観光収入を2兆円にする、という三つの目標を掲げた。辺野古移設については「一刻も早い返還に向けた現実的な解決策として、容認する」と改めて述べた（[朝日新聞](https://www.asahi.com/articles/ASVB60T9QVB6UTIL00WM.html)）。
 
 ## 知事選の結果
 
@@ -357,4 +370,4 @@ sources:
 
 10月3日未明に那覇市のホテルで女性が殺害され、財布などが奪われた事件で、県警は4日、普天間飛行場所属の米海兵隊上等兵の男（20）を強盗殺人の疑いで緊急逮捕した（[沖縄タイムス](https://www.okinawatimes.co.jp/articles/-/1937577)）。上等兵は容疑を否認している（[沖縄タイムス](https://www.okinawatimes.co.jp/articles/-/1938276)）。
 
-古謝氏は5日、外務省と防衛省の沖縄の出先機関の幹部や在沖米軍トップを県庁に呼んで抗議し、「日米地位協定の見直しを含め、実効性ある抜本的対策を講じるよう強く求める」と述べた（[沖縄タイムス](https://www.okinawatimes.co.jp/articles/-/1938233)）。政府側も、茂木敏充外相がジョージ・グラス駐日米国大使に抗議し、再発防止の徹底を求めた（[沖縄タイムス](https://www.okinawatimes.co.jp/articles/-/1937756)）。
+古謝氏は5日、外務省と防衛省の沖縄の出先機関の幹部や在沖米軍トップを県庁に呼んで抗議し、「日米地位協定の見直しを含め、実効性ある抜本的対策を講じるよう強く求める」と述べた（[沖縄タイムス](https://www.okinawatimes.co.jp/articles/-/1938233)）。在沖米軍トップは謝罪しなかった。古謝氏は、容疑者が否認していて有罪が確定していない中で謝罪はできないと、米側から事前に説明があったと明かした（[朝日新聞](https://www.asahi.com/articles/ASVB52HMTVB5UTIL008M.html)）。政府側も、茂木敏充外相がジョージ・グラス駐日米国大使に抗議し、再発防止の徹底を求めた（[沖縄タイムス](https://www.okinawatimes.co.jp/articles/-/1937756)）。
