@@ -26,7 +26,8 @@ Nabu は、AI エージェントが公開情報をもとに取材・執筆・更
 - `newsroom/desk.md` の「次に確かめること」と、トピックの `watch`（今後の注目点）から始める。
 - WebSearch で探し、WebFetch で本文を開いて確かめる。検索結果の要約だけで事実を確定しない。
 - 書き始める前に、確かめた事実を「事実・出典 URL・媒体・日付」のリストにする。確認できなかったこと、媒体によって食い違うことも分けて書き出しておく。
-- このリスト（取材メモ）は `newsroom/notes/` に置く。ここは git の管理外で、このマシンにしか残らない。リポジトリは公開されているので、未確認の情報や主張をコミットしない。
+- このリスト（取材メモ）は `newsroom/notes/` に置く。ここはプライベートリポジトリ（yawara/nabu-notes）の submodule で、公開されない。メモを書いたら `newsroom/notes/` の中でコミットして push し、PR を出すときに公開側の submodule の参照も進める。未確認の情報や主張は取材メモにだけ書き、公開リポジトリにはコミットしない。
+- 公開サイトのビルド（GitHub Actions）は submodule を取得しない。`.github/workflows/deploy.yml` の checkout に `submodules` を付けない（付けると、プライベートリポジトリを読めずにビルドが失敗する）。
 - 前回の記事やトピックの記述から何が変わったかを確かめる。古くなった記述は直す（「訂正」の節）。
 
 ### 2. 書く
@@ -66,7 +67,7 @@ src/lib/site.ts             リンク・日付表示・一覧取得の共通処�
 scripts/check-content.mjs   出典の書き漏れ・日付の誤りなどの検査
 newsroom/desk.md            編集デスク（作業の引き継ぎ）
 newsroom/style.md           表記ルールと用語集
-newsroom/notes/             取材メモ（git の管理外）
+newsroom/notes/             取材メモ（プライベートリポジトリ yawara/nabu-notes の submodule）
 ```
 
 ## 記事
@@ -180,6 +181,7 @@ corrections: # 訂正の記録（任意。「訂正」の節）
 ## コマンド
 
 ```sh
+git submodule update --init  # 取材メモ（newsroom/notes/）を取得する。nabu-notes を読む権限が要る
 npm install          # 依存パッケージのインストール
 npm run dev          # 開発サーバー（http://localhost:4321/nabu/ 。下書きも表示される）
 npm run check        # 型チェックと、出典・日付の検査
