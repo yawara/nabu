@@ -339,6 +339,18 @@ sources:
     date: 2026-10-06
     accessed: 2026-10-07
     kind: news
+  - title: 沖縄・辺野古沖事故、２隻目転覆は２分後に　現場海域、高波継続か―船の事業登録なし
+    publisher: 時事通信
+    url: https://www.jiji.com/jc/article?k=2026031701002&g=soc
+    date: 2026-03-17
+    accessed: 2026-10-07
+    kind: news
+  - title: 辺野古沖小型船転覆2人死亡　運航の市民団体事務所など関係先に家宅捜索
+    publisher: 日本テレビ（日テレNEWS NNN）
+    url: https://news.ntv.co.jp/category/society/15eb2184755d400b8977b9d5ced55b26
+    date: 2026-03-20
+    accessed: 2026-10-07
+    kind: news
 ---
 
 ## いまの状況
@@ -384,6 +396,8 @@ sources:
 ## 移設に反対する人たちの動き
 
 玉城氏は落選が決まった9月13日夜、那覇市で支援者に「辺野古は造れない。（移設反対と）県民を代表して主張したことは間違っていない」と述べた（[時事通信](https://www.jiji.com/jc/article?k=2026091300354&g=pol)）。移設に反対する政党や団体などでつくる「辺野古新基地を造らせないオール沖縄会議」は10月3日、名護市辺野古の米軍キャンプ・シュワブのゲート前で集会を開き、主催者発表で616人が参加した（[琉球新報](https://ryukyushimpo.jp/national/entry-5535031.html)）。
+
+移設に反対する「ヘリ基地反対協議会」が運航する船2隻は、2026年3月16日、研修旅行中の高校生らを乗せて辺野古沖で転覆し、高校生と船長の2人が死亡した（[時事通信](https://www.jiji.com/jc/article?k=2026031701002&g=soc)、[日本テレビ](https://news.ntv.co.jp/category/society/15eb2184755d400b8977b9d5ced55b26)）。この事故については、トピック「[辺野古沖の船転覆事故](../henoko-boat-capsize/)」で伝えている。
 
 ## 米兵による強盗殺人容疑事件
 
