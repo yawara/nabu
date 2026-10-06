@@ -1,0 +1,36 @@
+---
+import { formatDate, sourceKindLabel, type Article } from '../lib/site';
+
+interface Props {
+  sources: Article['data']['sources'];
+  heading?: string;
+}
+
+const { sources, heading = '出典' } = Astro.props;
+---
+
+{
+  sources.length > 0 && (
+    <section class="sources" aria-labelledby="sources-heading">
+      <h2 id="sources-heading">{heading}</h2>
+      <ol>
+        {sources.map((source) => (
+          <li>
+            <span class={`source-kind source-kind-${source.kind}`}>{sourceKindLabel[source.kind]}</span>
+            <span class="source-publisher">{source.publisher}</span>
+            <a href={source.url}>{source.title}</a>
+            <span class="source-meta">
+              {source.date && <>（{formatDate(source.date)}）</>}
+              {formatDate(source.accessed)}閲覧
+              {source.archive && (
+                <>
+                  ・<a href={source.archive}>保存版</a>
+                </>
+              )}
+            </span>
+          </li>
+        ))}
+      </ol>
+    </section>
+  )
+}

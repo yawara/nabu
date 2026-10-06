@@ -1,0 +1,90 @@
+---
+import '../styles/global.css';
+import { ISSUES_URL, REPO_URL, SITE_DESCRIPTION, SITE_NAME, SITE_TAGLINE } from '../consts';
+import { href } from '../lib/site';
+
+interface Props {
+  title?: string;
+  description?: string;
+  type?: 'website' | 'article';
+}
+
+const { title, description = SITE_DESCRIPTION, type = 'website' } = Astro.props;
+const pageTitle = title ? `${title} | ${SITE_NAME}` : `${SITE_NAME} — ${SITE_TAGLINE}`;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+const path = Astro.url.pathname;
+const nav = [
+  { label: 'トップ', to: '/' },
+  { label: 'トピック', to: '/topics/' },
+  { label: '記事一覧', to: '/articles/' },
+  { label: '編集方針', to: '/policy/' },
+  { label: '訂正', to: '/corrections/' },
+];
+const isCurrent = (to: string) => (to === '/' ? path === href('/') : path.startsWith(href(to)));
+---
+
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" href={href('/favicon.svg')} type="image/svg+xml" />
+    <link rel="alternate" type="application/rss+xml" title={SITE_NAME} href={href('/rss.xml')} />
+    <meta property="og:site_name" content={SITE_NAME} />
+    <meta property="og:title" content={title ?? SITE_NAME} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content={type} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:locale" content="ja_JP" />
+    <meta name="twitter:card" content="summary" />
+    <slot name="head" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">本文へ移動</a>
+    <header class="masthead">
+      <div class="wrap masthead-inner">
+        <a class="brand" href={href('/')}>
+          <span class="brand-name">{SITE_NAME}</span>
+          <span class="brand-tagline">{SITE_TAGLINE}</span>
+        </a>
+        <nav class="site-nav" aria-label="サイト内">
+          {
+            nav.map((item) => (
+              <a href={href(item.to)} aria-current={isCurrent(item.to) ? 'page' : undefined}>
+                {item.label}
+              </a>
+            ))
+          }
+        </nav>
+      </div>
+    </header>
+    <p class="ai-disclosure">
+      <span class="wrap">
+        このサイトの記事は AI エージェントが公開情報をもとに作成しています。出典はすべて記事末尾にあります。
+        <a href={href('/policy/')}>編集方針</a>
+      </span>
+    </p>
+    <main id="main" class="wrap">
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>
+          <strong>{SITE_NAME}</strong> — {SITE_DESCRIPTION}
+        </p>
+        <p>
+          誤りや出典の問題に気づいたら <a href={ISSUES_URL}>GitHub の Issue</a> でお知らせください。訂正は<a
+            href={href('/corrections/')}>訂正一覧</a
+          >で公開します。
+        </p>
+        <p class="footer-links">
+          <a href={href('/rss.xml')}>RSS</a>
+          <a href={REPO_URL}>ソースコード</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

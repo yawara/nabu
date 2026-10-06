@@ -1,0 +1,30 @@
+---
+import { formatPartialDate, type Topic } from '../lib/site';
+
+interface Props {
+  items: Topic['data']['timeline'];
+  sources: Topic['data']['sources'];
+}
+
+const { items, sources } = Astro.props;
+const publisherOf = new Map(sources.map((s) => [s.url, s.publisher]));
+const sorted = [...items].sort((a, b) => a.date.localeCompare(b.date));
+---
+
+<ol class="timeline">
+  {
+    sorted.map((item) => (
+      <li>
+        <time datetime={item.date}>{formatPartialDate(item.date)}</time>
+        <p>
+          {item.text}
+          <span class="timeline-sources">
+            {item.sources.map((url) => (
+              <a href={url}>{publisherOf.get(url) ?? new URL(url).hostname}</a>
+            ))}
+          </span>
+        </p>
+      </li>
+    ))
+  }
+</ol>

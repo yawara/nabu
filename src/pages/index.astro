@@ -1,0 +1,51 @@
+---
+import ArticleList from '../components/ArticleList.astro';
+import Base from '../layouts/Base.astro';
+import {
+  articleHref,
+  articlesInTopic,
+  formatDate,
+  getArticles,
+  getTopics,
+  statusLabel,
+  topicHref,
+} from '../lib/site';
+
+const articles = await getArticles();
+const topics = (await getTopics()).filter((t) => t.data.status !== 'closed');
+---
+
+<Base>
+  <section class="front-topics" aria-labelledby="topics-heading">
+    <h2 id="topics-heading" class="section-heading">追跡中のトピック</h2>
+    <div class="topic-cards">
+      {
+        topics.map((topic) => {
+          const latest = articlesInTopic(articles, topic.id)[0];
+          return (
+            <article class="topic-card">
+              <p class="kicker">
+                <span class={`status status-${topic.data.status}`}>{statusLabel[topic.data.status]}</span>
+                <span>{formatDate(topic.data.updated)} 更新</span>
+              </p>
+              <h3>
+                <a href={topicHref(topic.id)}>{topic.data.title}</a>
+              </h3>
+              <p>{topic.data.summary}</p>
+              {latest && (
+                <p class="topic-latest">
+                  最新記事: <a href={articleHref(latest)}>{latest.data.title}</a>
+                </p>
+              )}
+            </article>
+          );
+        })
+      }
+    </div>
+  </section>
+
+  <section aria-labelledby="latest-heading">
+    <h2 id="latest-heading" class="section-heading">最新記事</h2>
+    {articles.length > 0 ? <ArticleList articles={articles.slice(0, 20)} /> : <p>まだ記事はありません。</p>}
+  </section>
+</Base>

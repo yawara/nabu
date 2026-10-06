@@ -1,0 +1,19 @@
+# build output
+dist/
+.astro/
+
+# dependencies
+node_modules/
+
+# logs
+npm-debug.log*
+
+# environment variables
+.env
+.env.production
+
+# macOS
+.DS_Store
+
+# 取材メモ（未確認の情報を含むので公開リポジトリに入れない。CLAUDE.md 参照）
+newsroom/notes/

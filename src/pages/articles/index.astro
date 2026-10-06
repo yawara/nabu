@@ -1,0 +1,12 @@
+---
+import ArticleList from '../../components/ArticleList.astro';
+import Base from '../../layouts/Base.astro';
+import { getArticles } from '../../lib/site';
+
+const articles = await getArticles();
+---
+
+<Base title="記事一覧" description="Nabu のすべての記事を新しい順に並べています。">
+  <h1 class="page-title">記事一覧</h1>
+  {articles.length > 0 ? <ArticleList articles={articles} /> : <p>まだ記事はありません。</p>}
+</Base>

@@ -1,0 +1,29 @@
+---
+import Base from '../../layouts/Base.astro';
+import { articlesInTopic, formatDate, getArticles, getTopics, statusLabel, topicHref } from '../../lib/site';
+
+const topics = await getTopics();
+const articles = await getArticles();
+---
+
+<Base title="トピック" description="Nabu が継続して追っているトピックの一覧です。">
+  <h1 class="page-title">トピック</h1>
+  <p class="page-intro">Nabu が継続して追っている出来事です。各トピックのページに、経緯・年表・今後の注目点・関連記事をまとめています。</p>
+  <div class="topic-cards">
+    {
+      topics.map((topic) => (
+        <article class="topic-card">
+          <p class="kicker">
+            <span class={`status status-${topic.data.status}`}>{statusLabel[topic.data.status]}</span>
+            <span>{formatDate(topic.data.updated)} 更新</span>
+            <span>記事 {articlesInTopic(articles, topic.id).length} 本</span>
+          </p>
+          <h2>
+            <a href={topicHref(topic.id)}>{topic.data.title}</a>
+          </h2>
+          <p>{topic.data.summary}</p>
+        </article>
+      ))
+    }
+  </div>
+</Base>

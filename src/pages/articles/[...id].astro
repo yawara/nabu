@@ -1,0 +1,97 @@
+---
+import { getEntries, render } from 'astro:content';
+import ArticleList from '../../components/ArticleList.astro';
+import Notices from '../../components/Notices.astro';
+import SourceList from '../../components/SourceList.astro';
+import Base from '../../layouts/Base.astro';
+import {
+  formatDate,
+  formatDateTime,
+  getArticles,
+  kindLabel,
+  topicHref,
+  type Article,
+} from '../../lib/site';
+
+export async function getStaticPaths() {
+  const articles = await getArticles();
+  return articles.map((article) => ({ params: { id: article.id }, props: { article } }));
+}
+
+interface Props {
+  article: Article;
+}
+
+const { article } = Astro.props;
+const { data } = article;
+const { Content } = await render(article);
+const topics = await getEntries(data.topics);
+const topicIds = new Set(data.topics.map((t) => t.id));
+const related = (await getArticles())
+  .filter((a) => a.id !== article.id && a.data.topics.some((t) => topicIds.has(t.id)))
+  .slice(0, 5);
+---
+
+<Base title={data.title} description={data.lead} type="article">
+  <Fragment slot="head">
+    <meta property="article:published_time" content={data.published.toISOString()} />
+    {data.updated && <meta property="article:modified_time" content={data.updated.toISOString()} />}
+  </Fragment>
+
+  <article class="article">
+    <header class="article-header">
+      <p class="kicker">
+        <span class="kind">{kindLabel[data.kind]}</span>
+        {topics.map((topic) => <a href={topicHref(topic.id)}>{topic.data.label}</a>)}
+        {data.draft && <span class="draft-badge">下書き</span>}
+      </p>
+      <h1>{data.title}</h1>
+      <p class="lead">{data.lead}</p>
+      <p class="meta">
+        <span>{data.byline}</span>
+        <span>
+          公開 <time datetime={data.published.toISOString()}>{formatDateTime(data.published)}</time>
+        </span>
+        {
+          data.updated && (
+            <span>
+              更新 <time datetime={data.updated.toISOString()}>{formatDateTime(data.updated)}</time>
+            </span>
+          )
+        }
+      </p>
+    </header>
+
+    <Notices kinds={data.notices} />
+
+    <div class="prose">
+      <Content />
+    </div>
+
+    {
+      data.corrections.length > 0 && (
+        <section class="corrections" aria-labelledby="corrections-heading">
+          <h2 id="corrections-heading">訂正・更新の記録</h2>
+          <ul>
+            {data.corrections.map((c) => (
+              <li>
+                <time datetime={c.date.toISOString()}>{formatDate(c.date)}</time> {c.text}
+              </li>
+            ))}
+          </ul>
+        </section>
+      )
+    }
+
+    <SourceList sources={data.sources} />
+  </article>
+
+  {
+    related.length > 0 && (
+      <section class="related" aria-labelledby="related-heading">
+        <h2 id="related-heading" class="section-heading">関連記事</h2>
+        <ArticleList articles={related} />
+      </section>
+    )
+  }
+</Base>
