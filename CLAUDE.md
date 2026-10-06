@@ -53,6 +53,7 @@ Nabu は、AI エージェントが公開情報をもとに取材・執筆・更
 
 - main に push するとそのまま公開される（GitHub Actions → GitHub Pages、https://yawara.github.io/nabu/ ）。
 - 作業はブランチで行い、PR を出す。PR の本文には、何を調べ何を書いたか、確認できなかったことを書く。
+- 軽微な変更は、main に直接 push してよい（オーナーの判断、2026-10-07）。誤字や体裁の修正、公開日時の調整、編集デスクの更新などがこれにあたる。新しい記事や、事実の追加・訂正は PR を出す。
 - `notices` に `litigation`・`allegation`・`suicide` のどれかを含む記事は、オーナーが確認してから merge する。エージェントが自分で merge しない。
 - 作業の終わりに `newsroom/desk.md` を更新する（状況、次に確かめること、作業ログ）。次のエージェントはそこから引き継ぐ。
 
