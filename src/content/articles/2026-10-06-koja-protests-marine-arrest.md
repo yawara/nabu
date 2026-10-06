@@ -3,9 +3,13 @@ title: 古謝知事、米兵逮捕で日米に抗議 地位協定の見直し求
 lead: >-
   那覇市のホテルで10月3日に女性が殺害され、財布などが奪われた事件で、沖縄県警は4日、米海兵隊の上等兵の男（20）を強盗殺人の疑いで緊急逮捕した。9月30日に就任した古謝玄太知事は5日、日米両政府の出先機関と在沖米軍トップに抗議し、日米地位協定の見直しを含む抜本的な対策を求めた。高市早苗首相は7日にも古謝氏と面会する方向で調整している。
 published: 2026-10-06T12:20:00+09:00
+updated: 2026-10-06T12:45:00+09:00
 topics: [okinawa-koja-bases]
 kind: news
 notices: [developing]
+corrections:
+  - date: 2026-10-06
+    text: 在沖米軍トップが謝罪しなかったことについて、米側から事前に説明があったと古謝知事が明かしたことを追記しました。あわせて、6日の県議会での知事の発言と、県議会の抗議決議の予定を追記しました。
 sources:
   - title: 「激しい怒り」古謝知事、地位協定見直し・抜本的犯罪対策求める 米兵の強盗殺人事件 外務省沖縄大使と沖縄防衛局長を呼び出し抗議 知念那覇市長も同席
     publisher: 沖縄タイムス
@@ -90,9 +94,35 @@ sources:
     url: https://www.okinawatimes.co.jp/feature/kenchijisen2026/detail?id=6a5ed491905bd4b2cb00000b
     accessed: 2026-10-06
     kind: news
+  - title: 沖縄の古謝県知事、米軍幹部らに抗議 海兵隊員が強盗殺人容疑で逮捕
+    publisher: 朝日新聞
+    url: https://www.asahi.com/articles/ASVB52HMTVB5UTIL008M.html
+    date: 2026-10-05
+    accessed: 2026-10-06
+    kind: news
+  - title: 【那覇市強盗殺人】県が米軍と日本政府に抗議 古謝知事「激しい怒りを覚える」
+    publisher: 沖縄テレビOTV（Yahoo!ニュース配信）
+    url: https://news.yahoo.co.jp/articles/a2cb299ee9cc9614db6263fb4afa5cb8cc03389c
+    date: 2026-10-05
+    accessed: 2026-10-06
+    kind: news
+  - title: 沖縄知事と那覇市長が抗議 在沖米軍トップは謝罪せず 強盗殺人
+    publisher: 毎日新聞（Yahoo!ニュース配信）
+    url: https://news.yahoo.co.jp/articles/50e9fec2e06c33cb18857003f21e75e3ac88e4f3
+    date: 2026-10-05
+    accessed: 2026-10-06
+    kind: news
+  - title: 古謝知事が所信表明で「県民に不安」 米兵逮捕、県議会は抗議決議へ
+    publisher: 朝日新聞
+    url: https://www.asahi.com/articles/ASVB60T9QVB6UTIL00WM.html
+    date: 2026-10-06
+    accessed: 2026-10-06
+    kind: news
 ---
 
 古謝氏は5日午後、外務省沖縄事務所の紀谷昌彦・沖縄担当大使と沖縄防衛局の村井勝局長を県庁に呼んで抗議し、「このような事件が二度と起きないよう、日米両政府の責任で、日米地位協定の見直しを含め、実効性ある抜本的対策を講じるよう強く求める」と述べた（[沖縄タイムス](https://www.okinawatimes.co.jp/articles/-/1938233)）。続いて、在沖米軍トップのベンジャミン・ワトソン中将とアンドリュー・オウ在沖米国総領事にも抗議した。ワトソン氏は遺族らに哀悼の意を示したが、謝罪はしなかった（[琉球新報](https://ryukyushimpo.jp/politics/entry-5537574.html)）。
+
+古謝氏は6日、就任後初めての県議会で、所信表明演説に先立って事件に触れ、「極めて悪質で県民に大きな不安を与え、断じて許せるものではない」と述べた。日米地位協定の見直しなど抜本的な対策を日米両政府に求めるとも述べた（[朝日新聞](https://www.asahi.com/articles/ASVB60T9QVB6UTIL00WM.html)）。
 
 ## 事件の概要
 
@@ -108,7 +138,9 @@ sources:
 
 ワトソン氏は抗議に対し、「深刻な事態に深く心を痛めている。この重大な事件が、隣人である沖縄の皆さまに多大な懸念と不安をもたらしていることを認識している」と述べた。「全ての隊員に対して、公務中か否かを問わず、常に最高水準の行動規範と品行を求めている」とも説明した（[沖縄タイムス](https://www.okinawatimes.co.jp/articles/-/1938308)）。抗議の後、報道陣に謝罪しなかった理由を問われると「進行中の捜査についてはコメントしない」と答えた。オウ氏は「米国政府を代表して遺族、県民に心から哀悼の意を表する」と述べた（[琉球新報](https://ryukyushimpo.jp/politics/entry-5537574.html)）。
 
-古謝氏は同じ日の夜、自身の X に「捜査中であることは理解しています」としたうえで、「罪が明らかになった場合には、ご遺族と県民に対し、しっかりと謝罪をしていただきたいと考えています」と投稿した（[古謝氏の X](https://x.com/GentaKoja/status/2107060511489823045)）。
+謝罪がなかったことについて、古謝氏は抗議の後の取材で、米軍側から「容疑者が否認をしているので（有罪が）確定していない中で謝罪はできない」と事前に説明があったと明かした（[朝日新聞](https://www.asahi.com/articles/ASVB52HMTVB5UTIL008M.html)）。[沖縄テレビ](https://news.yahoo.co.jp/articles/a2cb299ee9cc9614db6263fb4afa5cb8cc03389c)も、古謝氏が取材で同じ趣旨の米側の説明を伝えたと報じている。古謝氏は、謝罪がなかったことは「組織としては理解できる部分もある」と述べた（[朝日新聞](https://www.asahi.com/articles/ASVB52HMTVB5UTIL008M.html)、[毎日新聞](https://news.yahoo.co.jp/articles/50e9fec2e06c33cb18857003f21e75e3ac88e4f3)）。
+
+古謝氏は同じ日の夜、自身の X に「捜査中であることは理解しています」としつつ、「県民の皆さまが納得できるものではないと、私も同じ思いで受け止めています」と投稿した。そのうえで「罪が明らかになった場合には、ご遺族と県民に対し、しっかりと謝罪をしていただきたいと考えています」と書いた（[古謝氏の X](https://x.com/GentaKoja/status/2107060511489823045)）。
 
 ## 政府も米側に抗議
 
@@ -118,8 +150,8 @@ sources:
 
 ## 今後の動き
 
-古謝氏は今週中にも上京し、首相や関係閣僚に直接会って再発防止の対策を求めるとしている（[古謝氏の X](https://x.com/GentaKoja/status/2107060511489823045)）。政府は、7日にも首相官邸で高市氏と古謝氏が面会する方向で調整に入った（[共同通信](https://topics.smt.docomo.ne.jp/topnews/politics/1000/b1a25678d5b5f1f4b024248e33256881)）。県議会は、事件に抗議する決議を9日に採決する見通しだと[沖縄タイムス](https://www.okinawatimes.co.jp/articles/-/1938656)が報じている。
+古謝氏は今週中にも上京し、首相や関係閣僚に直接会って再発防止の対策を求めるとしている（[古謝氏の X](https://x.com/GentaKoja/status/2107060511489823045)）。政府は、7日にも首相官邸で高市氏と古謝氏が面会する方向で調整に入った（[共同通信](https://topics.smt.docomo.ne.jp/topnews/politics/1000/b1a25678d5b5f1f4b024248e33256881)）。県議会の米軍基地関係特別委員会は6日午後、日米両政府への抗議決議と意見書をまとめる予定で（[朝日新聞](https://www.asahi.com/articles/ASVB60T9QVB6UTIL00WM.html)）、本会議では9日に採決する見通しだと[沖縄タイムス](https://www.okinawatimes.co.jp/articles/-/1938656)が報じている。
 
 ## 背景
 
-古謝氏は9月の知事選で、普天間飛行場の名護市辺野古への移設に反対してきた現職の玉城デニー氏を破り、移設を容認する立場で県政を担っている。日米地位協定については、知事選の際の[沖縄タイムスの候補者アンケート](https://www.okinawatimes.co.jp/feature/kenchijisen2026/detail?id=6a5ed491905bd4b2cb00000b)で「運用改善だけでは足りず、改定を求めます」と答えていた。
+古謝氏は9月の知事選で、普天間飛行場の名護市辺野古への移設に反対してきた現職の玉城デニー氏を破り、移設を容認する立場で県政を担っている。6日の所信表明でも、辺野古移設を「一刻も早い返還に向けた現実的な解決策として、容認する」と改めて述べた（[朝日新聞](https://www.asahi.com/articles/ASVB60T9QVB6UTIL00WM.html)）。日米地位協定については、知事選の際の[沖縄タイムスの候補者アンケート](https://www.okinawatimes.co.jp/feature/kenchijisen2026/detail?id=6a5ed491905bd4b2cb00000b)で「運用改善だけでは足りず、改定を求めます」と答えていた。
