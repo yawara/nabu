@@ -4,10 +4,14 @@ import { formatPartialDate, type Topic } from '../lib/site';
 interface Props {
   items: Topic['data']['timeline'];
   sources: Topic['data']['sources'];
+  reporting?: Topic['data']['reporting'];
 }
 
-const { items, sources } = Astro.props;
+const { items, sources, reporting = [] } = Astro.props;
 const publisherOf = new Map(sources.map((s) => [s.url, s.publisher]));
+for (const record of reporting) {
+  publisherOf.set(`#reporting-${record.id}`, `${record.reporter}（取材）`);
+}
 const sorted = [...items].sort((a, b) => a.date.localeCompare(b.date));
 ---
 
@@ -20,7 +24,7 @@ const sorted = [...items].sort((a, b) => a.date.localeCompare(b.date));
           {item.text}
           <span class="timeline-sources">
             {item.sources.map((url) => (
-              <a href={url}>{publisherOf.get(url) ?? new URL(url).hostname}</a>
+              <a href={url}>{publisherOf.get(url) ?? (url.startsWith('#') ? '取材記録' : new URL(url).hostname)}</a>
             ))}
           </span>
         </p>

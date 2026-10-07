@@ -3,14 +3,15 @@ import { formatDate, sourceKindLabel, type Article } from '../lib/site';
 
 interface Props {
   sources: Article['data']['sources'];
+  reporting?: Article['data']['reporting'];
   heading?: string;
 }
 
-const { sources, heading = '出典' } = Astro.props;
+const { sources, reporting = [], heading = '出典・取材' } = Astro.props;
 ---
 
 {
-  sources.length > 0 && (
+  (sources.length > 0 || reporting.length > 0) && (
     <section class="sources" aria-labelledby="sources-heading">
       <h2 id="sources-heading">{heading}</h2>
       <ol>
@@ -28,6 +29,19 @@ const { sources, heading = '出典' } = Astro.props;
                 </>
               )}
             </span>
+          </li>
+        ))}
+        {reporting.map((record) => (
+          <li id={`reporting-${record.id}`}>
+            <span class="source-kind">直接取材</span>
+            <span class="source-publisher">
+              {record.reporterUrl ? <a href={record.reporterUrl}>{record.reporter}</a> : record.reporter}
+            </span>
+            <span>{record.method}</span>
+            <span class="source-meta">
+              （<time datetime={record.date.toISOString().slice(0, 10)}>{formatDate(record.date)}</time>・{record.location}）
+            </span>
+            <div>確認範囲：{record.scope}</div>
           </li>
         ))}
       </ol>

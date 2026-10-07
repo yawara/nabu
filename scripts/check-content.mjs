@@ -3,7 +3,8 @@
 // 検査できない、ファイルをまたぐ決まりごとを確かめる。`npm run check` から呼ばれる。
 import { readdirSync, readFileSync } from 'node:fs';
 import { basename, join, relative } from 'node:path';
-import { load as loadYaml } from 'js-yaml';
+import { JSON_SCHEMA, load as loadYaml } from 'js-yaml';
+import { checkReporting } from './check-reporting.mjs';
 
 const root = new URL('..', import.meta.url).pathname;
 const contentDir = join(root, 'src/content');
@@ -31,7 +32,8 @@ function parse(file) {
     fail(file, 'frontmatter（--- で囲んだ部分）がない');
     return null;
   }
-  return { data: loadYaml(match[1]) ?? {}, body: match[2] };
+  // 日付を文字列で保ち、2026-02-31 のような存在しない日が自動補正されるのを避ける。
+  return { data: loadYaml(match[1], { schema: JSON_SCHEMA }) ?? {}, body: match[2] };
 }
 
 const toDate = (value) => (value instanceof Date ? value : new Date(String(value)));
@@ -69,13 +71,15 @@ const topicIds = new Set();
 for (const file of listMarkdown(join(contentDir, 'topics'))) {
   const parsed = parse(file);
   if (!parsed) continue;
-  const { data } = parsed;
+  const { data, body } = parsed;
   topicIds.add(basename(file, '.md'));
   checkSources(file, data.sources);
+  for (const message of checkReporting(data, body, tomorrowJst)) fail(file, message);
   const listed = new Set((data.sources ?? []).map((s) => s.url));
   for (const item of data.timeline ?? []) {
     if (isFuture(item.date)) fail(file, `年表に未来の日付がある（予定は watch に書く）: ${dayOf(item.date)}`);
     for (const url of item.sources ?? []) {
+      if (url.startsWith('#reporting-')) continue; // checkReporting で存在を照合する
       if (!listed.has(url)) fail(file, `年表の出典が sources に載っていない: ${url}`);
     }
   }
@@ -101,6 +105,10 @@ for (const file of listMarkdown(join(contentDir, 'articles'))) {
     if (!topicIds.has(topic)) fail(file, `存在しないトピック: ${topic}`);
   }
   checkSources(file, data.sources);
+  for (const message of checkReporting(data, body, tomorrowJst)) fail(file, message);
+  if ((data.sources ?? []).length + (data.reporting ?? []).length === 0) {
+    fail(file, 'sources または reporting を合計 1 件以上記載する');
+  }
   const listed = new Set((data.sources ?? []).map((s) => s.url));
   for (const url of new Set(urlsInBody(body))) {
     if (!listed.has(url)) fail(file, `本文のリンクが sources に載っていない: ${url}`);
