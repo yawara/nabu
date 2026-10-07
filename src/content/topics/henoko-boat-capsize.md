@@ -82,6 +82,10 @@ timeline:
     text: 第十一管区海上保安本部が、協議会の共同代表らの自宅などを家宅捜索する。
     sources:
       - https://www.jiji.com/jc/article?k=2026081200894&g=soc
+  - date: 2026-08-14
+    text: 遺族が、学校法人同志社と高校に緊急要望書を提出したと公表する。中立な検証体制、遺族や卒業生への聞き取り、安全対策の先行実施などを求める。
+    sources:
+      - https://note.com/beloved_tomoka/n/nfe54178d50c2
   - date: 2026-08-21
     text: 学校法人同志社の臨時理事会で、八田英二理事長が辞任の意向を示す。西田喜久夫校長を8月31日付で解任することを決める。
     sources:
@@ -116,6 +120,18 @@ watch:
   - date: 2027-03
     text: 沖縄県議会の調査特別委員会が、再発防止のための報告書をまとめる（委員長は3月までにまとめたいとしている）。
 sources:
+  - title: 学校法人同志社への緊急要望書について
+    publisher: 辺野古ボート転覆事故遺族メモ（遺族の note）
+    url: https://note.com/beloved_tomoka/n/nfe54178d50c2
+    date: 2026-08-14
+    accessed: 2026-10-07
+    kind: primary
+  - title: 金子大臣会見要旨（2026年5月22日）
+    publisher: 国土交通省
+    url: https://www.mlit.go.jp/report/interview/daijin260522.html
+    date: 2026-05-22
+    accessed: 2026-10-07
+    kind: primary
   - title: 沖縄・辺野古沖事故、２隻目転覆は２分後に　現場海域、高波継続か―船の事業登録なし
     publisher: 時事通信
     url: https://www.jiji.com/jc/article?k=2026031701002&g=soc
@@ -328,7 +344,7 @@ sources:
 
 ## いまの状況
 
-2026年3月16日午前10時10分ごろ、沖縄県名護市の辺野古崎付近の海で、研修旅行中の同志社国際高（京都府京田辺市）の生徒らが乗った船2隻が相次いで転覆した。乗っていた21人のうち、2年の武石知華（ともか）さん（17）と「不屈」の船長（71）が死亡した（[時事通信](https://www.jiji.com/jc/article?k=2026031701002&g=soc)、[産経新聞](https://www.sankei.com/article/20260319-IGKFKLCI65I5ZPXCEW3UXTCPRE/)）。船は、普天間飛行場（宜野湾市）の名護市辺野古への移設に反対する「ヘリ基地反対協議会」が運航していた（[日本テレビ](https://news.ntv.co.jp/category/society/15eb2184755d400b8977b9d5ced55b26)）。
+2026年3月16日午前10時10分ごろ、沖縄県名護市の辺野古崎付近の海で、研修旅行中の同志社国際高（京都府京田辺市）の生徒らが乗った船2隻が相次いで転覆した。乗っていた21人のうち、2年の武石知華（ともか）さん（17）と「不屈」の船長の金井創（かない・はじめ）氏（71）が死亡した（[時事通信](https://www.jiji.com/jc/article?k=2026031701002&g=soc)、[産経新聞](https://www.sankei.com/article/20260319-IGKFKLCI65I5ZPXCEW3UXTCPRE/)、[国土交通省](https://www.mlit.go.jp/report/interview/daijin260522.html)）。船は、普天間飛行場（宜野湾市）の名護市辺野古への移設に反対する「ヘリ基地反対協議会」が運航していた（[日本テレビ](https://news.ntv.co.jp/category/society/15eb2184755d400b8977b9d5ced55b26)）。
 
 10月7日の時点で、第十一管区海上保安本部（11管）は業務上過失致死傷などの疑いで捜査を続けている（[産経新聞](https://www.sankei.com/article/20260917-VY4P5365JFLFVGMX7GD4HQVHWU/)）。国の運輸安全委員会も原因を調べているが、報告書はまだ出ていない（[運輸安全委員会](https://jtsb.mlit.go.jp/jtsb/ship/detail2.php?id=17113)）。武石さんの遺族は、学校と協議会の関係者計11人を告訴している（[産経新聞](https://www.sankei.com/article/20260730-ZQS3DJZXZBKHLAE5VFRTZUHCFQ/)）。
 
@@ -338,9 +354,11 @@ sources:
 
 ## 何が問われているか
 
-**刑事責任**　11管は、学校と協議会の双方を家宅捜索した。遺族は、この事故を「船の船長ひとりの事故」で終わらせないとして、学校側の4人と協議会側の7人を告訴した（[父親が note に載せた会見の要旨](https://note.com/beloved_tomoka/n/n88895e4de831)）。国土交通省は、死亡した「不屈」の船長を、事業登録を受けずに生徒らを運んだ海上運送法違反の疑いで告発した（[国土交通省](https://www.mlit.go.jp/report/press/kaiji03_hh_000224.html)）。
+**刑事責任**　11管は、学校と協議会の双方を家宅捜索した。遺族は、この事故を「船の船長ひとりの事故」で終わらせないとして、学校側の4人と協議会側の7人を告訴した（[父親が note に載せた会見の要旨](https://note.com/beloved_tomoka/n/n88895e4de831)）。国土交通省は、死亡した金井氏を、事業登録を受けずに生徒らを運んだ海上運送法違反の疑いで告発した（[国土交通省](https://www.mlit.go.jp/report/press/kaiji03_hh_000224.html)）。
 
 **学校の安全管理**　特別調査委員会の報告書は、学校がこのコースを始めてから一度も辺野古の現地で下見をしていなかったと指摘した。当日は波浪注意報が出ていたが、担当の引率教員は確かめておらず、どちらも船に乗らなかったとしている（[特別調査委員会の報告書](https://www.doshisha.ed.jp/usr/dl.php?content_type=topics&pk=1785463079&name=1785463079.pdf&path=4abe7046c2d71b5eaedf5b0efee335a4313f0ea6a76de30babe69a1b21f7de0590adb3642ebce5bc51670b5d19e885ad)）。
+
+遺族は8月14日の note で、中立な立場での検証に加え、関係者や遺族、卒業生への聞き取りを求めた。教育内容の検証が終わるのを待たずに安全対策を進め、教職員の処分だけで検証を終わらせないよう訴えている（[遺族の note](https://note.com/beloved_tomoka/n/nfe54178d50c2)）。
 
 **研修旅行の内容**　文部科学省は、辺野古への移設工事に関する学習が、政治的活動を禁じた教育基本法14条2項に「反するものであったと考えられ」るとする見解を示した（[文部科学省の見解](https://www.mext.go.jp/content/202600525-ope_dev02-000050128_1.pdf)）。高市早苗首相は「過度な介入とは考えていない」と述べ（[読売新聞](https://www.yomiuri.co.jp/politics/20260623-GYT1T00409/)）、国民民主党の榛葉賀津也幹事長や遺族は文科省の判断を評価した（[産経新聞](https://www.sankei.com/article/20260522-URF4PF3XEZBJNDJV4JYNBZ2GNY/)、[遺族の note](https://note.com/beloved_tomoka/n/nbf751abe1a82)）。一方、京都弁護士会や日本教育法学会、当時知事だった玉城デニー氏らは、教育内容への行政の介入だと批判している（[京都弁護士会](https://www.kyotoben.or.jp/pages_kobetu.cfm?id=10000772&s=seimei)、[日本教育法学会](https://jela1970.jp/statement.html)、[沖縄県](https://www.pref.okinawa.lg.jp/_res/projects/default_project/_page_/001/039/477/260529_kaiken.pdf)）。同志社の特別調査委員会はこの点を調査の対象外とし、法人が新たに設ける委員会が検討する（[学校法人同志社](https://www.doshisha.ed.jp/information/index.php?c=topics_view&pk=1787828438)）。
 
