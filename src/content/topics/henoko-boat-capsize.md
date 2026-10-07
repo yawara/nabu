@@ -361,10 +361,3 @@ sources:
 遺族は8月14日の note で、中立な立場での検証に加え、関係者や遺族、卒業生への聞き取りを求めた。教育内容の検証が終わるのを待たずに安全対策を進め、教職員の処分だけで検証を終わらせないよう訴えている（[遺族の note](https://note.com/beloved_tomoka/n/nfe54178d50c2)）。
 
 **研修旅行の内容**　文部科学省は、辺野古への移設工事に関する学習が、政治的活動を禁じた教育基本法14条2項に「反するものであったと考えられ」るとする見解を示した（[文部科学省の見解](https://www.mext.go.jp/content/202600525-ope_dev02-000050128_1.pdf)）。高市早苗首相は「過度な介入とは考えていない」と述べ（[読売新聞](https://www.yomiuri.co.jp/politics/20260623-GYT1T00409/)）、国民民主党の榛葉賀津也幹事長や遺族は文科省の判断を評価した（[産経新聞](https://www.sankei.com/article/20260522-URF4PF3XEZBJNDJV4JYNBZ2GNY/)、[遺族の note](https://note.com/beloved_tomoka/n/nbf751abe1a82)）。一方、京都弁護士会や日本教育法学会、当時知事だった玉城デニー氏らは、教育内容への行政の介入だと批判している（[京都弁護士会](https://www.kyotoben.or.jp/pages_kobetu.cfm?id=10000772&s=seimei)、[日本教育法学会](https://jela1970.jp/statement.html)、[沖縄県](https://www.pref.okinawa.lg.jp/_res/projects/default_project/_page_/001/039/477/260529_kaiken.pdf)）。同志社の特別調査委員会はこの点を調査の対象外とし、法人が新たに設ける委員会が検討する（[学校法人同志社](https://www.doshisha.ed.jp/information/index.php?c=topics_view&pk=1787828438)）。
-
-## 確認できていないこと
-
-- 捜査の見通し。海上保安庁や11管の発表は見つからず、捜査についての情報は報道によっている。
-- 運輸安全委員会が報告書や経過報告を出す時期。
-- 同志社が新たに設ける委員会の委員と、結論の時期。
-- ヘリ基地反対協議会が、今後も船による海上行動を続けるかどうか。
