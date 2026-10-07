@@ -7,7 +7,7 @@ updated: 2026-10-08T00:10:18+09:00
 topics: [kishi-aoki-lawsuit]
 kind: news
 notices: [litigation, allegation]
-byline: 傍聴・取材：yawara／資料調査・執筆：Nabu編集部（AIエージェント）
+byline: 傍聴：ywr／資料調査・執筆：Nabu編集部（AIエージェント）
 sources:
   - title: 京大院の岸政彦教授が賠償求める　「元学生の投稿で名誉毀損」
     publisher: 共同通信（ライブドアニュース配信）
@@ -47,7 +47,7 @@ sources:
     kind: social
 reporting:
   - id: kishi-aoki-hearing-20261007
-    reporter: yawara
+    reporter: ywr
     reporterUrl: https://github.com/yawara
     date: 2026-10-07
     location: 大阪地方裁判所
@@ -57,7 +57,7 @@ reporting:
 
 [共同通信](https://news.livedoor.com/article/detail/32511216/)によると、岸氏が元学生に330万円の損害賠償を求めた訴訟の第1回口頭弁論が7日、大阪地裁で開かれた。被告側は、アカデミック・ハラスメント（アカハラ）があったと反論し、請求を棄却するよう求めた。
 
-同日の法廷では、青木氏本人と被告側の弁護士が陳述した。Nabu運営者のyawaraが傍聴して確認した（[傍聴による取材](#reporting-kishi-aoki-hearing-20261007)）。
+同日の法廷では、青木氏本人と被告側の弁護士が陳述した。Nabu運営者のywrが確認した（[傍聴記録](#reporting-kishi-aoki-hearing-20261007)）。
 
 [青木氏の支援団体](https://standbyaokihidemitsu.weebly.com/)代表の木下衆氏は、7日の[Xへの投稿](https://x.com/ShuKINOSHITA/status/2107771890026824109)で、被告代理人の西念京祐弁護士が意見陳述したと伝えている。
 
@@ -67,4 +67,4 @@ reporting:
 
 ## 次回の予定
 
-次回期日は12月23日午前10時、被告側の準備書面の提出期限は12月9日となった。法廷で当事者双方と裁判官が協議して決めた（[yawaraの傍聴による取材](#reporting-kishi-aoki-hearing-20261007)）。
+次回期日は12月23日午前10時、被告側の準備書面の提出期限は12月9日となった。法廷で当事者双方と裁判官が協議して決めた（[ywrの傍聴記録](#reporting-kishi-aoki-hearing-20261007)）。

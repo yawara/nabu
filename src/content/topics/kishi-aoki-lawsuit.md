@@ -140,7 +140,7 @@ sources:
     kind: social
 reporting:
   - id: kishi-aoki-hearing-20261007
-    reporter: yawara
+    reporter: ywr
     reporterUrl: https://github.com/yawara
     date: 2026-10-07
     location: 大阪地方裁判所
@@ -152,9 +152,9 @@ reporting:
 
 社会学者で京都大学大学院文学研究科教授の岸政彦（きし・まさひこ）氏は2026年6月1日、元大学院生の X への投稿で名誉を傷つけられたとして、投稿の削除と損害賠償を求める訴えを大阪地裁に起こしたと、自身の X で公表した（[岸氏の X](https://x.com/sociologbook/status/2061360932115353905)）。岸氏は相手の名前を出していないが、青木秀光（あおき・ひでみつ）氏と、青木氏を支援する団体は、被告は青木氏だとしている（[支援団体のサイト](https://standbyaokihidemitsu.weebly.com/)）。
 
-10月7日に大阪地裁で第1回口頭弁論が開かれた。[共同通信](https://news.livedoor.com/article/detail/32511216/)によると、岸氏の損害賠償請求額は330万円で、被告側はハラスメントがあったと反論し、請求棄却を求めた。同日の法廷では青木氏本人と被告側の弁護士が陳述した（[yawaraの傍聴による取材](#reporting-kishi-aoki-hearing-20261007)）。
+10月7日に大阪地裁で第1回口頭弁論が開かれた。[共同通信](https://news.livedoor.com/article/detail/32511216/)によると、岸氏の損害賠償請求額は330万円で、被告側はハラスメントがあったと反論し、請求棄却を求めた。同日の法廷では青木氏本人と被告側の弁護士が陳述した（[ywrの傍聴記録](#reporting-kishi-aoki-hearing-20261007)）。
 
-次回期日は12月23日午前10時、被告側の準備書面の提出期限は12月9日。法廷で当事者双方と裁判官が協議して決めた（[yawaraの傍聴による取材](#reporting-kishi-aoki-hearing-20261007)）。
+次回期日は12月23日午前10時、被告側の準備書面の提出期限は12月9日。法廷で当事者双方と裁判官が協議して決めた（[ywrの傍聴記録](#reporting-kishi-aoki-hearing-20261007)）。
 
 ## 何が争われているか
 
