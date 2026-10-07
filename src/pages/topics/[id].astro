@@ -76,7 +76,7 @@ const articles = articlesInTopic(await getArticles(), topic.id);
       data.timeline.length > 0 && (
         <section aria-labelledby="timeline-heading">
           <h2 id="timeline-heading" class="section-heading">年表</h2>
-          <Timeline items={data.timeline} sources={data.sources} />
+          <Timeline items={data.timeline} sources={data.sources} reporting={data.reporting} />
         </section>
       )
     }
@@ -97,6 +97,6 @@ const articles = articlesInTopic(await getArticles(), topic.id);
       )
     }
 
-    <SourceList sources={data.sources} />
+    <SourceList sources={data.sources} reporting={data.reporting} />
   </article>
 </Base>

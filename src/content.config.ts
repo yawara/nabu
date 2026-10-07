@@ -3,7 +3,7 @@ import { glob } from 'astro/loaders';
 import { z } from 'astro/zod';
 
 /**
- * 出典。記事・トピックに書く事実は、すべてここに挙げた資料までたどれるようにする。
+ * 公開資料の出典。人間による直接取材は reporting に記録する。
  * 書き方の詳細は CLAUDE.md の「出典のルール」を参照。
  */
 const source = z.object({
@@ -21,6 +21,25 @@ const source = z.object({
   /** Wayback Machine などの保存先（あれば） */
   archive: z.url().optional(),
 });
+
+/** 人間が公開の場で直接見聞きした取材。原メモは非公開で保管し、公開する由来と確認範囲を書く。 */
+const reporting = z.object({
+  id: z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/, '英小文字・数字とハイフンで書く'),
+  /** 記録者が了承した公開表示名 */
+  reporter: z.string().trim().min(1),
+  /** 取材者の公開プロフィール。取材内容の出典 URL とは区別する */
+  reporterUrl: z.url().regex(/^https?:\/\//, '公開プロフィールは http / https の URL で書く').optional(),
+  date: z.coerce.date(),
+  location: z.string().trim().min(1),
+  method: z.string().trim().min(1),
+  /** この取材で直接確認した範囲。発言は、その内容の真偽とは区別する */
+  scope: z.string().trim().min(1),
+});
+
+const sourceReference = z.union([
+  z.url(),
+  z.string().regex(/^#reporting-[a-z0-9]+(?:-[a-z0-9]+)*$/),
+]);
 
 /**
  * 記事・トピックの冒頭に出す注意書き。文面は src/components/Notices.astro にある。
@@ -48,12 +67,16 @@ const articles = defineCollection({
     /** news: ニュース / explainer: 解説 / timeline: 経緯 / analysis: 分析 */
     kind: z.enum(['news', 'explainer', 'timeline', 'analysis']).default('news'),
     notices: z.array(notice).default([]),
-    sources: z.array(source).min(1),
+    sources: z.array(source).default([]),
+    reporting: z.array(reporting).default([]),
     corrections: z
       .array(z.object({ date: z.coerce.date(), text: z.string().min(1) }))
       .default([]),
     byline: z.string().default('Nabu 編集部（AI エージェント）'),
     draft: z.boolean().default(false),
+  }).refine((data) => data.sources.length + data.reporting.length > 0, {
+    message: 'sources または reporting を合計 1 件以上記載する',
+    path: ['sources'],
   }),
 });
 
@@ -72,13 +95,14 @@ const topics = defineCollection({
     order: z.number().default(100),
     notices: z.array(notice).default([]),
     people: z.array(z.object({ name: z.string(), role: z.string() })).default([]),
-    /** 年表。各項目の sources の URL は、このトピックの sources にも載せる */
+    /** 年表。公開 URL は sources に、#reporting-<id> は reporting に対応させる */
     timeline: z
-      .array(z.object({ date: partialDate, text: z.string().min(1), sources: z.array(z.url()).min(1) }))
+      .array(z.object({ date: partialDate, text: z.string().min(1), sources: z.array(sourceReference).min(1) }))
       .default([]),
     /** 今後の注目点 */
     watch: z.array(z.object({ date: partialDate.optional(), text: z.string().min(1) })).default([]),
     sources: z.array(source).default([]),
+    reporting: z.array(reporting).default([]),
   }),
 });
 
