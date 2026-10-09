@@ -1,0 +1,13 @@
+---
+// 画面の下に貼り付く 1 行の帯。お知らせ（SiteNoticePanel）を閉じたあとに出し、× で閉じると、そのタブでは出さない。
+// JavaScript が動かない環境では、いつも出す（× は出さない）。
+import { href } from '../lib/site';
+---
+
+<section class="site-notice-bar" aria-label="このサイトについて" data-nosnippet>
+  <div class="wrap">
+    <span class="site-notice-tag">実験中</span>
+    <a href={href('/policy/')}>記事は AI エージェントが書いています</a>
+    <button type="button" class="site-notice-close" data-notice-action="close" aria-label="この表示を閉じる">×</button>
+  </div>
+</section>

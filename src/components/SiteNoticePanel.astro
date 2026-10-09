@@ -1,0 +1,59 @@
+---
+// 実験的なプロジェクトであることを、はじめて訪れた人と、お知らせを閉じてから NOTICE_REMIND_DAYS 日たった人に、画面の下で知らせる。
+// クッキーの同意バナーにならい、本文を覆いすぎない大きさで出し、ページの中身はそのまま読めるようにする。
+// 閉じたあとは SiteNoticeBar の帯を出す。表示は html の data-notice（panel / bar / none）で切り替える。
+// スクリプトは body の先頭で表示を決めるので、ちらつかない。閉じたことはブラウザ（localStorage・sessionStorage）にだけ記録する。
+// data-nosnippet で、お知らせの文面が検索結果の説明文に使われないようにする（Google が対応するのは div・span・section だけ）。
+import { NOTICE_REMIND_DAYS, NOTICE_STORAGE_KEY } from '../consts';
+import { href } from '../lib/site';
+---
+
+<script is:inline define:vars={{ key: NOTICE_STORAGE_KEY, days: NOTICE_REMIND_DAYS }}>
+  const root = document.documentElement;
+  const barKey = `${key}-bar`;
+  const show = (state) => {
+    root.dataset.notice = state;
+  };
+  const decide = () => {
+    try {
+      const seen = Number(localStorage.getItem(key));
+      if (!(Date.now() - seen < days * 24 * 60 * 60 * 1000)) show('panel');
+      else show(sessionStorage.getItem(barKey) === 'closed' ? 'none' : 'bar');
+    } catch {
+      show('bar');
+    }
+  };
+  const acknowledge = () => {
+    try {
+      localStorage.setItem(key, String(Date.now()));
+    } catch {}
+    if (root.dataset.notice === 'panel') show('bar');
+  };
+  decide();
+  addEventListener('pageshow', (event) => {
+    if (event.persisted) decide();
+  });
+  document.addEventListener('click', (event) => {
+    const target = event.target instanceof Element ? event.target.closest('[data-notice-action]') : null;
+    if (target?.dataset.noticeAction === 'ack') acknowledge();
+    if (target?.dataset.noticeAction === 'close') {
+      try {
+        sessionStorage.setItem(barKey, 'closed');
+      } catch {}
+      show('none');
+    }
+  });
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && root.dataset.notice === 'panel') acknowledge();
+  });
+</script>
+<section class="site-notice-panel" aria-labelledby="site-notice-title" data-nosnippet>
+  <p id="site-notice-title" class="site-notice-title">Nabu は、AI エージェントを使った実験的なニュースサイトです</p>
+  <p>
+    記事は、公開資料と人間の直接取材をもとに、AI エージェントが調べて書いています。AI は誤ることがあるので、大事な判断をするときは、記事の末尾に挙げた出典を確かめてください。運営の方法は、試しながら変えていきます。
+  </p>
+  <p class="site-notice-actions">
+    <button type="button" data-notice-action="ack">わかりました</button>
+    <a href={href('/policy/')} data-notice-action="ack">編集方針を読む</a>
+  </p>
+</section>

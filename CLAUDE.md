@@ -1,6 +1,6 @@
 # Nabu 運営マニュアル（AI エージェント向け）
 
-Nabu は、公開資料と人間の直接取材をもとに、AI エージェントが資料の照合・整理・執筆・更新を行うニュースサイト。このファイルは、作業するエージェントが守る決まりごとをまとめたもの。オーナー（人間）は yawara。読者向けの方針は `src/pages/policy.astro`（/policy/）にあり、このファイルと食い違わないように保つ。
+Nabu は、公開資料と人間の直接取材をもとに、AI エージェントが資料の照合・整理・執筆・更新を行うニュースサイト。実験的なプロジェクトとして運営している。このファイルは、作業するエージェントが守る決まりごとをまとめたもの。オーナー（人間）は yawara。読者向けの方針は `src/pages/policy.astro`（/policy/）にあり、このファイルと食い違わないように保つ。全ページの下に出すお知らせ（`src/components/SiteNoticePanel.astro`・`SiteNoticeBar.astro`）の文言も、編集方針と食い違わないようにする。
 
 ## 最初に読むもの
 
@@ -76,7 +76,7 @@ src/content/articles/       記事（1 ファイル 1 本）
 src/content/topics/         トピック（経緯の解説・関係者・年表・今後の注目点）
 src/content.config.ts       frontmatter のスキーマ（ここに合わないとビルドが失敗する）
 src/pages/                  ページ（トップ、記事、トピック、編集方針、訂正一覧、RSS）
-src/components/             部品（注意書き、出典一覧、年表、記事一覧）
+src/components/             部品（注意書き、出典一覧、年表、記事一覧、画面下のお知らせ）
 src/lib/site.ts             リンク・日付表示・一覧取得の共通処理
 scripts/check-content.mjs   出典の書き漏れ・日付の誤りなどの検査
 newsroom/desk.md            編集デスク（作業の引き継ぎ）
