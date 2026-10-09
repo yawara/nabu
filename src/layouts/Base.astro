@@ -1,5 +1,7 @@
 ---
 import '../styles/global.css';
+import SiteNoticeBar from '../components/SiteNoticeBar.astro';
+import SiteNoticePanel from '../components/SiteNoticePanel.astro';
 import { ISSUES_URL, REPO_URL, SITE_DESCRIPTION, SITE_NAME, SITE_TAGLINE } from '../consts';
 import { href } from '../lib/site';
 
@@ -43,6 +45,7 @@ const isCurrent = (to: string) => (to === '/' ? path === href('/') : path.starts
     <slot name="head" />
   </head>
   <body>
+    <SiteNoticePanel />
     <a class="skip-link" href="#main">本文へ移動</a>
     <header class="masthead">
       <div class="wrap masthead-inner">
@@ -86,5 +89,6 @@ const isCurrent = (to: string) => (to === '/' ? path === href('/') : path.starts
         </p>
       </div>
     </footer>
+    <SiteNoticeBar />
   </body>
 </html>
