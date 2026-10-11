@@ -2,10 +2,10 @@
 title: 古謝県政と沖縄の米軍基地
 label: 沖縄・古謝県政
 summary: >-
-  2026年9月の沖縄県知事選で、普天間飛行場（宜野湾市）の名護市辺野古への移設を容認する古謝玄太氏が初当選し、9月30日に知事に就任した。古謝知事は移設を容認する一方、普天間の返還期日の明確化や日米地位協定の改定を政府に求めている。就任直後の10月には米海兵隊員が強盗殺人の疑いで逮捕され、県は日米両政府と米軍に抗議した。米軍は沖縄にいる米軍人の外出と飲酒を一時的に制限した。
+  2026年9月の沖縄県知事選で、普天間飛行場（宜野湾市）の名護市辺野古への移設を容認する古謝玄太氏が初当選し、9月30日に知事に就任した。古謝知事は移設を容認する一方、普天間の返還期日の明確化や日米地位協定の改定を政府に求めている。10月に米海兵隊員が強盗殺人の疑いで逮捕された事件を受け、県議会は地位協定の抜本改定などを求める抗議決議を可決した。日米外相は10月10日、実効性のある事件防止措置を取るため協議していくことを確認した。
 status: active
 started: 2026-09-13
-updated: 2026-10-07
+updated: 2026-10-11
 order: 1
 notices: [developing]
 people:
@@ -25,6 +25,10 @@ people:
     role: 米海兵隊中将。在沖米軍トップで、第3海兵遠征軍司令官。
   - name: ジョージ・グラス
     role: 駐日米国大使
+  - name: マルコ・ルビオ
+    role: 米国務長官。10月10日に茂木外相と電話会談した。
+  - name: 翁長政俊
+    role: 沖縄県副知事（2026年10月9日就任）。元自民党県連会長。
 timeline:
   - date: 2019-12-25
     text: 防衛省が辺野古移設の総工費を約9300億円、事業の完了までを約12年と見積もる。
@@ -93,13 +97,28 @@ timeline:
     sources:
       - https://x.com/IIIMEF/status/2107465093801775266
       - https://www.nikkei.com/article/DGXZQOJC063Y10W6A001C2000000/
-watch:
   - date: 2026-10-07
-    text: 古謝知事が上京し、高市首相や小泉防衛相と面会して、米兵による事件の再発防止などを求める（日本経済新聞、10月6日）。沖縄政策協議会の早期開催も求める。
+    text: 古謝知事が高市首相と面会し、具体的な再発防止策と沖縄政策協議会の早期開催を求める。首相は事件防止措置に向け日米協議を進めると述べる。
+    sources:
+      - https://www.kantei.go.jp/jp/105/actions/202610/07menkai.html
+      - https://newsdig.tbs.co.jp/articles/withbloomberg/2996404?display=1
   - date: 2026-10-09
-    text: 県議会で、元自民党県連会長の翁長政俊氏を副知事に選ぶ人事案を採決する予定。米兵による事件への抗議決議も同じ日に採決される見通しと沖縄タイムスが報じている。
+    text: 県議会が、米政府・米軍への抗議決議と日本政府への意見書を賛成45人、反対2人で可決する。実効性のある再発防止策と日米地位協定の抜本改定などを求める。
+    sources:
+      - https://www.saitama-np.co.jp/articles/218482/postDetail
+      - https://www.fnn.jp/articles/-/1130132
   - date: 2026-10-09
-    text: 在沖米軍の48時間の外出・飲酒の禁止が正午に終わり、午前0時から5時までの外出禁止（30日間）に移る。米軍は外出の規則を見直し、沖縄地域調整委員会に諮るとしている。
+    text: 県議会が翁長政俊氏の副知事人事に同意し、古謝知事が同日辞令を交付する。任期は9日から4年間。
+    sources:
+      - https://kumanichi.com/articles/2045094
+  - date: 2026-10-10
+    text: 茂木外相とルビオ米国務長官が電話会談する。日本側発表は実効性のある事件防止措置に向けた日米協議の確認を説明し、米側発表は哀悼と捜査への全面協力を伝える。
+    sources:
+      - https://www.mofa.go.jp/mofaj/press/release/pressit_000001_04277.html
+      - https://www.state.gov/releases/office-of-the-spokesman/2026/10/secretary-rubios-call-with-japanese-foreign-minister-motegi/
+watch:
+  - text: 10月10日の日米外相会談で確認した協議の進展と、具体的な事件防止措置の公表。
+  - text: 米軍が見直すとしている外出規則の内容と、沖縄地域調整委員会での協議の結果。
   - date: 2026-10-25
     text: 那覇市長選の投開票（10月18日告示）。現職の知念覚氏が2期目を目指して立候補する見通し（沖縄タイムス、5月時点）。
   - date: '2026'
@@ -351,6 +370,54 @@ sources:
     date: 2026-03-20
     accessed: 2026-10-07
     kind: news
+  - title: 日米外相電話会談
+    publisher: 外務省
+    url: https://www.mofa.go.jp/mofaj/press/release/pressit_000001_04277.html
+    date: 2026-10-10
+    accessed: 2026-10-11
+    kind: primary
+  - title: Secretary Rubio’s Call with Japanese Foreign Minister Motegi
+    publisher: 米国務省
+    url: https://www.state.gov/releases/office-of-the-spokesman/2026/10/secretary-rubios-call-with-japanese-foreign-minister-motegi/
+    date: 2026-10-10
+    accessed: 2026-10-11
+    kind: primary
+  - title: 沖縄県知事による面会
+    publisher: 首相官邸
+    url: https://www.kantei.go.jp/jp/105/actions/202610/07menkai.html
+    date: 2026-10-07
+    accessed: 2026-10-11
+    kind: primary
+  - title: 【速報】高市総理「事件防止の措置、日米間で協議を進める」　米兵の逮捕で沖縄・古謝県知事が政府に抗議
+    publisher: TBS CROSS DIG with Bloomberg
+    url: https://newsdig.tbs.co.jp/articles/withbloomberg/2996404?display=1
+    date: 2026-10-07
+    accessed: 2026-10-11
+    kind: news
+  - title: 沖縄県議会、抗議決議を可決　米兵逮捕「規律保持の限界」
+    publisher: 共同通信（埼玉新聞配信）
+    url: https://www.saitama-np.co.jp/articles/218482/postDetail
+    date: 2026-10-09
+    accessed: 2026-10-11
+    kind: news
+  - title: 県議会が米海兵隊の事件に対する抗議決議と意見書を可決　全会一致ならず
+    publisher: 沖縄テレビ（FNNプライムオンライン配信）
+    url: https://www.fnn.jp/articles/-/1130132
+    date: 2026-10-09
+    accessed: 2026-10-11
+    kind: news
+  - title: 沖縄副知事に自民系翁長氏　古謝氏「国とのつなぎ役」
+    publisher: 共同通信（熊本日日新聞配信）
+    url: https://kumanichi.com/articles/2045094
+    date: 2026-10-09
+    accessed: 2026-10-11
+    kind: news
+  - title: Rubio offers Japan FM condolences over murder linked to US Marine
+    publisher: AFP（The Peninsula掲載）
+    url: https://thepeninsulaqatar.com/article/10/10/2026/rubio-offers-japan-fm-condolences-over-murder-linked-to-us-marine
+    date: 2026-10-10
+    accessed: 2026-10-11
+    kind: news
 ---
 
 ## いまの状況
@@ -359,9 +426,15 @@ sources:
 
 古謝氏は移設を容認する一方、普天間の返還期日をはっきり示すよう政府に求め、日米地位協定の改定も訴えている。就任翌日の10月1日、県は移設をめぐる法的な対応などを担ってきた「辺野古新基地建設問題対策課」を廃止し、普天間の返還などを担当する「早期返還対策室」を基地対策課の中に設けた（[沖縄タイムス](https://www.okinawatimes.co.jp/articles/-/1935346)）。
 
-就任から3日後の10月3日には、那覇市のホテルで女性が殺害され、財布などが奪われる事件が起きた。県警は4日、普天間飛行場所属の米海兵隊上等兵の男（20）を強盗殺人の疑いで緊急逮捕した。古謝氏は5日、日米両政府と米軍に抗議し、地位協定の見直しを含む抜本的な対策を求めた。米軍は6日、沖縄にいるすべての米軍人の外出と飲酒を一時的に制限した（[第3海兵遠征軍の X](https://x.com/IIIMEF/status/2107465093801775266)）。
+就任から3日後の10月3日には、那覇市のホテルで女性が殺害され、財布などが奪われる事件が起きた。県警は4日、普天間飛行場所属の米海兵隊上等兵の男（20）を強盗殺人の疑いで緊急逮捕した。古謝氏は5日、日米両政府と米軍に抗議し、地位協定の見直しを含む抜本的な対策を求めた。米軍は6日、沖縄にいるすべての米軍人の外出と飲酒を一時的に制限すると発表した（[第3海兵遠征軍の X](https://x.com/IIIMEF/status/2107465093801775266)）。
+
+**10月11日訂正**：上の段落で、米軍が6日に外出・飲酒を制限したとしていた記述を、6日に制限すると発表した記述に直した。外出・飲酒禁止の開始は7日正午だった（[第3海兵遠征軍の X](https://x.com/IIIMEF/status/2107465093801775266)）。
 
 10月6日には、県議会の10月定例会で就任後初めての所信表明をした。[沖縄タイムス](https://www.okinawatimes.co.jp/articles/-/1938869)によると、10年間で県民所得を500万円にする、4年間で子育て予算を1000億円に増やす、8年間で観光収入を2兆円にする、という三つの目標を掲げた。辺野古移設については「一刻も早い返還に向けた現実的な解決策として、容認する」と改めて述べた（[朝日新聞](https://www.asahi.com/articles/ASVB60T9QVB6UTIL00WM.html)）。
+
+10月10日、茂木敏充外相とマルコ・ルビオ米国務長官が電話会談した。[外務省](https://www.mofa.go.jp/mofaj/press/release/pressit_000001_04277.html)によると、実効性のある事件防止措置を取るため日米で協議することを確認した。[米国務省](https://www.state.gov/releases/office-of-the-spokesman/2026/10/secretary-rubios-call-with-japanese-foreign-minister-motegi/)は、ルビオ氏が哀悼の意と捜査への全面的な協力の決意を伝えたと説明している。
+
+9日には、県議会が地位協定の抜本改定などを求める抗議決議と意見書を可決した（[共同通信](https://www.saitama-np.co.jp/articles/218482/postDetail)）。同じ日に、元自民党県連会長の翁長政俊氏が副知事に就任した（[共同通信](https://kumanichi.com/articles/2045094)）。
 
 ## 知事選の結果
 
@@ -406,3 +479,13 @@ sources:
 古謝氏は5日、外務省と防衛省の沖縄の出先機関の幹部や在沖米軍トップを県庁に呼んで抗議し、「日米地位協定の見直しを含め、実効性ある抜本的対策を講じるよう強く求める」と述べた（[沖縄タイムス](https://www.okinawatimes.co.jp/articles/-/1938233)）。在沖米軍トップは謝罪しなかった。古謝氏は、容疑者が否認していて有罪が確定していない中で謝罪はできないと、米側から事前に説明があったと明かした（[朝日新聞](https://www.asahi.com/articles/ASVB52HMTVB5UTIL008M.html)）。政府側も、茂木敏充外相がジョージ・グラス駐日米国大使に抗議し、再発防止の徹底を求めた（[沖縄タイムス](https://www.okinawatimes.co.jp/articles/-/1937756)）。
 
 在沖米軍トップのベンジャミン・ワトソン中将は6日付の文書で、沖縄にいるすべての米軍人に、7日正午から9日正午までの48時間、基地の外への外出と基地の内外での飲酒を禁じ、9日からの30日間は午前0時から5時までの外出を禁じると指示した（[第3海兵遠征軍の X](https://x.com/IIIMEF/status/2107465093801775266)）。文書に謝罪の言葉はない。那覇市議会は6日、地位協定の改定や、遺族への謝罪と補償などを求める抗議決議を全会一致で可決した（[日本経済新聞](https://www.nikkei.com/article/DGXZQOJC063Y10W6A001C2000000/)）。
+
+古謝氏は7日、[高市首相と官邸で面会した](https://www.kantei.go.jp/jp/105/actions/202610/07menkai.html)。[TBS](https://newsdig.tbs.co.jp/articles/withbloomberg/2996404?display=1)によると、具体的な再発防止策と沖縄政策協議会の早期開催を要請した。高市氏は、事件防止措置に向けて日米で協議を進めると述べた。
+
+[共同通信](https://www.saitama-np.co.jp/articles/218482/postDetail)によると、県議会は9日、米政府・米軍への抗議決議と日本政府への意見書を賛成45人、反対2人で可決した。実効性のある再発防止策と地位協定の抜本改定を求めた。[沖縄テレビ](https://www.fnn.jp/articles/-/1130132)は、遺族への謝罪と補償、米軍の組織としての責任の明示も要求していると伝えている。反対した無所属の会の議員2人は、在沖米軍トップの更迭を求める内容を盛り込むべきだとしていた。
+
+[AFP](https://thepeninsulaqatar.com/article/10/10/2026/rubio-offers-japan-fm-condolences-over-murder-linked-to-us-marine)は、午前0時から5時までの30日間の外出制限が9日に始まったと伝えている。10日の外相会談の日本側発表には、具体的な再発防止策や地位協定の改定に合意したとの記載はない（[外務省](https://www.mofa.go.jp/mofaj/press/release/pressit_000001_04277.html)）。
+
+## 副知事の就任
+
+[共同通信](https://kumanichi.com/articles/2045094)によると、県議会は9日、元自民党県連会長の翁長政俊氏を副知事に充てる人事に同意した。同日、古謝氏が辞令を交付した。任期は9日から4年間。古謝氏は県と国のつなぎ役として県行政の発展に尽力するよう求め、翁長氏は国に沖縄振興予算の増額を要請し、3000億円超の確保を目指す考えを示した。
