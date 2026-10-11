@@ -2,6 +2,7 @@
 import { getEntries, render } from 'astro:content';
 import ArticleList from '../../components/ArticleList.astro';
 import Notices from '../../components/Notices.astro';
+import ReadingNav from '../../components/ReadingNav.astro';
 import SourceList from '../../components/SourceList.astro';
 import Base from '../../layouts/Base.astro';
 import {
@@ -24,12 +25,22 @@ interface Props {
 
 const { article } = Astro.props;
 const { data } = article;
-const { Content } = await render(article);
+const { Content, headings } = await render(article);
 const topics = await getEntries(data.topics);
 const topicIds = new Set(data.topics.map((t) => t.id));
 const related = (await getArticles())
   .filter((a) => a.id !== article.id && a.data.topics.some((t) => topicIds.has(t.id)))
   .slice(0, 5);
+const navigation = headings
+  .filter((heading) => heading.depth === 2)
+  .map((heading) => ({ href: `#${heading.slug}`, label: heading.text }));
+if (data.corrections.length > 0) {
+  navigation.push({ href: '#corrections-heading', label: '訂正・更新の記録' });
+}
+navigation.push({ href: '#sources-heading', label: '出典・取材' });
+if (related.length > 0) {
+  navigation.push({ href: '#related-heading', label: '関連記事' });
+}
 ---
 
 <Base title={data.title} description={data.lead} type="article">
@@ -38,8 +49,8 @@ const related = (await getArticles())
     {data.updated && <meta property="article:modified_time" content={data.updated.toISOString()} />}
   </Fragment>
 
-  <article class="article">
-    <header class="article-header">
+  <article class="article reading-page">
+    <header class="article-header reading-header">
       <p class="kicker">
         <span class="kind">{kindLabel[data.kind]}</span>
         {topics.map((topic) => <a href={topicHref(topic.id)}>{topic.data.label}</a>)}
@@ -62,36 +73,41 @@ const related = (await getArticles())
       </p>
     </header>
 
-    <Notices kinds={data.notices} />
+    <div class="reading-layout">
+      <ReadingNav title="この記事の内容" items={navigation} />
+      <div class="reading-main">
+        <Notices kinds={data.notices} />
 
-    <div class="prose">
-      <Content />
+        <div class="prose">
+          <Content />
+        </div>
+
+        {
+          data.corrections.length > 0 && (
+            <section class="corrections" aria-labelledby="corrections-heading">
+              <h2 id="corrections-heading">訂正・更新の記録</h2>
+              <ul>
+                {data.corrections.map((c) => (
+                  <li>
+                    <time datetime={c.date.toISOString()}>{formatDate(c.date)}</time> {c.text}
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )
+        }
+
+        <SourceList sources={data.sources} reporting={data.reporting} />
+
+        {
+          related.length > 0 && (
+            <section class="related" aria-labelledby="related-heading">
+              <h2 id="related-heading" class="section-heading">関連記事</h2>
+              <ArticleList articles={related} compact />
+            </section>
+          )
+        }
+      </div>
     </div>
-
-    {
-      data.corrections.length > 0 && (
-        <section class="corrections" aria-labelledby="corrections-heading">
-          <h2 id="corrections-heading">訂正・更新の記録</h2>
-          <ul>
-            {data.corrections.map((c) => (
-              <li>
-                <time datetime={c.date.toISOString()}>{formatDate(c.date)}</time> {c.text}
-              </li>
-            ))}
-          </ul>
-        </section>
-      )
-    }
-
-    <SourceList sources={data.sources} reporting={data.reporting} />
   </article>
-
-  {
-    related.length > 0 && (
-      <section class="related" aria-labelledby="related-heading">
-        <h2 id="related-heading" class="section-heading">関連記事</h2>
-        <ArticleList articles={related} />
-      </section>
-    )
-  }
 </Base>
