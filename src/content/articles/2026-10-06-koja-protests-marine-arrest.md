@@ -1,9 +1,9 @@
 ---
 title: 古謝知事、米兵逮捕で日米に抗議 地位協定の見直し求める
 lead: >-
-  那覇市のホテルで10月3日に女性が殺害され、財布などが奪われた事件で、沖縄県警は4日、米海兵隊の上等兵の男（20）を強盗殺人の疑いで緊急逮捕した。9月30日に就任した古謝玄太知事は5日、日米両政府の出先機関と在沖米軍トップに抗議し、日米地位協定の見直しを含む抜本的な対策を求めた。高市早苗首相は7日にも古謝氏と面会する方向で調整している。
+  那覇市のホテルで10月3日に女性が殺害され、財布などが奪われた事件で、沖縄県警は4日、米海兵隊の上等兵の男（20）を強盗殺人の疑いで緊急逮捕した。9月30日に就任した古謝玄太知事は5日、日米両政府の出先機関と在沖米軍トップに抗議し、日米地位協定の見直しを含む抜本的な対策を求めた。高市早苗首相との面会に向けた調整も進んだ。
 published: 2026-10-06T12:20:00+09:00
-updated: 2026-10-06T12:40:00+09:00
+updated: 2026-10-13T00:07:50+09:00
 topics: [okinawa-koja-bases]
 kind: news
 notices: [developing]
@@ -118,6 +118,24 @@ sources:
     date: 2026-10-06
     accessed: 2026-10-06
     kind: news
+  - title: 日米外相電話会談
+    publisher: 外務省
+    url: https://www.mofa.go.jp/mofaj/press/release/pressit_000001_04277.html
+    date: 2026-10-10
+    accessed: 2026-10-11
+    kind: primary
+  - title: 沖縄県知事による面会
+    publisher: 首相官邸
+    url: https://www.kantei.go.jp/jp/105/actions/202610/07menkai.html
+    date: 2026-10-07
+    accessed: 2026-10-11
+    kind: primary
+  - title: 沖縄県議会、抗議決議を可決　米兵逮捕「規律保持の限界」
+    publisher: 共同通信（埼玉新聞配信）
+    url: https://www.saitama-np.co.jp/articles/218482/postDetail
+    date: 2026-10-09
+    accessed: 2026-10-11
+    kind: news
 ---
 
 古謝氏は5日午後、外務省沖縄事務所の紀谷昌彦・沖縄担当大使と沖縄防衛局の村井勝局長を県庁に呼んで抗議し、「このような事件が二度と起きないよう、日米両政府の責任で、日米地位協定の見直しを含め、実効性ある抜本的対策を講じるよう強く求める」と述べた（[沖縄タイムス](https://www.okinawatimes.co.jp/articles/-/1938233)）。続いて、在沖米軍トップのベンジャミン・ワトソン中将とアンドリュー・オウ在沖米国総領事にも抗議した。ワトソン氏は遺族らに哀悼の意を示したが、謝罪はしなかった（[琉球新報](https://ryukyushimpo.jp/politics/entry-5537574.html)）。
@@ -148,7 +166,13 @@ sources:
 
 高市氏は5日、国会での所信表明演説に先立って事件に触れ、「このような凶悪事件の発生は極めて遺憾であり、日本政府として米側に強く抗議するとともに、捜査への全面的な協力、米軍関係者の綱紀粛正と事件の再発防止の徹底を強く求めたところです」と述べた（[首相官邸](https://www.kantei.go.jp/jp/105/statement/2026/1005shoshinhyomei.html)）。
 
-## 今後の動き
+## 10月13日の追記
+
+古謝氏は7日、[高市首相と官邸で面会した](https://www.kantei.go.jp/jp/105/actions/202610/07menkai.html)。県議会は9日、実効性のある再発防止策や地位協定の抜本改定などを求める抗議決議と意見書を可決した（[共同通信](https://www.saitama-np.co.jp/articles/218482/postDetail)）。10日には日米外相が電話会談し、実効性のある事件防止措置を取るため日米で協議することを確認したと[外務省](https://www.mofa.go.jp/mofaj/press/release/pressit_000001_04277.html)が発表した。
+
+続報は「[沖縄の米兵事件、日米外相が再発防止に向けた協議を確認](../2026-10-13-okinawa-prevention-talks/)」で伝えている。
+
+## 10月6日時点の予定
 
 古謝氏は今週中にも上京し、首相や関係閣僚に直接会って再発防止の対策を求めるとしている（[古謝氏の X](https://x.com/GentaKoja/status/2107060511489823045)）。政府は、7日にも首相官邸で高市氏と古謝氏が面会する方向で調整に入った（[共同通信](https://topics.smt.docomo.ne.jp/topnews/politics/1000/b1a25678d5b5f1f4b024248e33256881)）。県議会の米軍基地関係特別委員会は6日午後、日米両政府への抗議決議と意見書をまとめる予定で（[朝日新聞](https://www.asahi.com/articles/ASVB60T9QVB6UTIL00WM.html)）、本会議では9日に採決する見通しだと[沖縄タイムス](https://www.okinawatimes.co.jp/articles/-/1938656)が報じている。
 
