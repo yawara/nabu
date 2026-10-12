@@ -1,0 +1,192 @@
+---
+interface Props {
+  id: string;
+  total: number;
+  searchLabel: string;
+  searchPlaceholder: string;
+  itemLabel: string;
+  filterLabel: string;
+  options: { value: string; label: string }[];
+}
+
+const { id, total, searchLabel, searchPlaceholder, itemLabel, filterLabel, options } = Astro.props;
+const resultsId = `${id}-results`;
+---
+
+<div class="collection" data-collection>
+  <form class="collection-controls" data-filter-controls hidden role="search" aria-label={searchLabel}>
+    <div class="collection-search">
+      <label for={`${id}-search`}>{searchLabel}</label>
+      <input
+        id={`${id}-search`}
+        type="search"
+        name="search"
+        placeholder={searchPlaceholder}
+        autocomplete="off"
+        aria-controls={resultsId}
+        data-filter-search
+      />
+    </div>
+    <div class="collection-select">
+      <label for={`${id}-filter`}>{filterLabel}</label>
+      <select id={`${id}-filter`} name="filter" aria-controls={resultsId} data-filter-select>
+        <option value="">すべて</option>
+        {options.map((option) => <option value={option.value}>{option.label}</option>)}
+      </select>
+    </div>
+    <button type="reset" class="collection-reset" data-filter-reset disabled>条件をクリア</button>
+  </form>
+  <p class="collection-count" role="status" aria-live="polite" aria-atomic="true" data-filter-count>全{total}件</p>
+  <div id={resultsId} class="collection-results">
+    <slot />
+  </div>
+  <p class="collection-empty" data-filter-empty hidden>
+    該当する{itemLabel}はありません。検索語や絞り込み条件を変えてください。
+  </p>
+</div>
+
+<style>
+  .collection-controls {
+    display: grid;
+    grid-template-columns: minmax(12rem, 1fr) minmax(10rem, 16rem) auto;
+    align-items: end;
+    gap: 1rem 1.25rem;
+    margin: 0 0 1.25rem;
+  }
+
+  .collection-controls[hidden] {
+    display: none;
+  }
+
+  .collection-controls label {
+    display: block;
+    margin-bottom: 0.35rem;
+    font-size: 0.8125rem;
+    font-weight: 700;
+  }
+
+  .collection-controls input,
+  .collection-controls select {
+    width: 100%;
+    min-height: 2.875rem;
+    padding: 0.5rem 0.7rem;
+    border: 1px solid var(--muted);
+    border-radius: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: inherit;
+    font-size: 0.9375rem;
+  }
+
+  .collection-controls input::placeholder {
+    color: var(--muted);
+  }
+
+  .collection-reset {
+    min-height: 2.875rem;
+    padding: 0.5rem 0;
+    border: 0;
+    background: transparent;
+    color: var(--fg);
+    font: inherit;
+    font-size: 0.8125rem;
+    text-decoration: underline;
+    text-underline-offset: 0.25em;
+    cursor: pointer;
+  }
+
+  .collection-reset:disabled {
+    color: var(--muted);
+    text-decoration: none;
+    cursor: default;
+  }
+
+  .collection-count {
+    margin: 0 0 0.75rem;
+    color: var(--muted);
+    font-size: 0.8125rem;
+  }
+
+  .collection-empty {
+    padding-block: 2rem;
+    border-top: 1px solid var(--rule);
+    color: var(--muted);
+    font-size: 0.9375rem;
+  }
+
+  @media (max-width: 40rem) {
+    .collection-controls {
+      grid-template-columns: minmax(0, 1fr);
+      gap: 0.75rem;
+    }
+
+    .collection-reset {
+      justify-self: start;
+      min-height: 2.25rem;
+    }
+  }
+</style>
+
+<script>
+  const normalize = (value: string) => value.normalize('NFKC').toLocaleLowerCase('ja');
+
+  function initializeCollections() {
+    document.querySelectorAll<HTMLElement>('[data-collection]').forEach((collection) => {
+      if (collection.dataset.collectionReady) return;
+
+      const controls = collection.querySelector<HTMLFormElement>('[data-filter-controls]');
+      const search = collection.querySelector<HTMLInputElement>('[data-filter-search]');
+      const filter = collection.querySelector<HTMLSelectElement>('[data-filter-select]');
+      const reset = collection.querySelector<HTMLButtonElement>('[data-filter-reset]');
+      const count = collection.querySelector<HTMLElement>('[data-filter-count]');
+      const empty = collection.querySelector<HTMLElement>('[data-filter-empty]');
+      if (!controls || !search || !filter || !reset || !count || !empty) return;
+
+      const items = Array.from(collection.querySelectorAll<HTMLElement>('[data-collection-item]')).map((element) => ({
+        element,
+        text: normalize(element.dataset.search ?? element.textContent ?? ''),
+        filters: (element.dataset.filterValues ?? '').split(/\s+/),
+      }));
+      let composing = false;
+
+      const applyFilters = () => {
+        const terms = normalize(search.value).trim().split(/\s+/).filter(Boolean);
+        let visible = 0;
+        items.forEach(({ element, text, filters }) => {
+          const matches = terms.every((term) => text.includes(term)) && (!filter.value || filters.includes(filter.value));
+          element.hidden = !matches;
+          if (matches) visible += 1;
+        });
+        count.textContent = terms.length || filter.value
+          ? `${items.length}件中${visible}件を表示`
+          : `全${items.length}件`;
+        empty.hidden = visible > 0;
+        reset.disabled = !search.value && !filter.value;
+      };
+
+      search.addEventListener('compositionstart', () => { composing = true; });
+      search.addEventListener('compositionend', () => {
+        composing = false;
+        applyFilters();
+      });
+      search.addEventListener('input', (event) => {
+        if (!composing && !(event as InputEvent).isComposing) applyFilters();
+      });
+      filter.addEventListener('change', applyFilters);
+      controls.addEventListener('submit', (event) => {
+        event.preventDefault();
+        if (!composing) applyFilters();
+      });
+      controls.addEventListener('reset', () => {
+        requestAnimationFrame(applyFilters);
+      });
+
+      collection.dataset.collectionReady = 'true';
+      applyFilters();
+      controls.hidden = false;
+    });
+  }
+
+  initializeCollections();
+  document.addEventListener('astro:page-load', initializeCollections);
+</script>

@@ -1,0 +1,33 @@
+---
+interface Props {
+  title: string;
+  items: { href: string; label: string }[];
+}
+
+const { title, items } = Astro.props;
+---
+
+{
+  items.length > 0 && (
+    <aside class="reading-nav">
+      <nav class="reading-nav-desktop" aria-label={title}>
+        <p class="reading-nav-title">{title}</p>
+        <ul class="reading-nav-list">
+          {items.map((item) => (
+            <li><a href={item.href}>{item.label}</a></li>
+          ))}
+        </ul>
+      </nav>
+      <details class="reading-nav-mobile">
+        <summary>{title}</summary>
+        <nav aria-label={title}>
+          <ul class="reading-nav-list">
+            {items.map((item) => (
+              <li><a href={item.href}>{item.label}</a></li>
+            ))}
+          </ul>
+        </nav>
+      </details>
+    </aside>
+  )
+}

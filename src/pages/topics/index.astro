@@ -1,5 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
+import CollectionFilter from '../../components/CollectionFilter.astro';
 import { articlesInTopic, formatDate, getArticles, getTopics, statusLabel, topicHref } from '../../lib/site';
 
 const topics = await getTopics();
@@ -7,23 +8,45 @@ const articles = await getArticles();
 ---
 
 <Base title="トピック" description="Nabu が継続して追っているトピックの一覧です。">
-  <h1 class="page-title">トピック</h1>
-  <p class="page-intro">Nabu が継続して追っている出来事です。各トピックのページに、経緯・年表・今後の注目点・関連記事をまとめています。</p>
-  <div class="topic-cards">
+  <header class="collection-header">
+    <p class="eyebrow">経緯を読む</p>
+    <h1 class="page-title">トピック</h1>
+    <p class="page-intro">継続して追っている出来事の、現在の状況とこれまでの経緯。年表・今後の注目点・関連記事をまとめています。</p>
+  </header>
+  <CollectionFilter
+    id="topics"
+    total={topics.length}
+    itemLabel="トピック"
+    searchLabel="トピックを検索"
+    searchPlaceholder="名前やキーワード"
+    filterLabel="状況"
+    options={Object.entries(statusLabel).map(([value, label]) => ({ value, label }))}
+  >
+  <div class="topic-directory">
     {
       topics.map((topic) => (
-        <article class="topic-card">
-          <p class="kicker">
-            <span class={`status status-${topic.data.status}`}>{statusLabel[topic.data.status]}</span>
-            <span>{formatDate(topic.data.updated)} 更新</span>
-            <span>記事 {articlesInTopic(articles, topic.id).length} 本</span>
-          </p>
-          <h2>
-            <a href={topicHref(topic.id)}>{topic.data.title}</a>
-          </h2>
-          <p>{topic.data.summary}</p>
+        <article
+          class="topic-directory-row"
+          data-collection-item
+          data-search={`${topic.data.title} ${topic.data.label} ${topic.data.summary}`}
+          data-filter-values={topic.data.status}
+        >
+          <div class="topic-directory-heading">
+            <p class="kicker">
+              <span class={`status status-${topic.data.status}`}>{statusLabel[topic.data.status]}</span>
+              <span>記事 {articlesInTopic(articles, topic.id).length} 本</span>
+            </p>
+            <h2>
+              <a href={topicHref(topic.id)}>{topic.data.title}</a>
+            </h2>
+            <p class="meta">
+              <time datetime={topic.data.updated.toISOString()}>{formatDate(topic.data.updated)}</time> 更新
+            </p>
+          </div>
+          <p class="topic-directory-summary">{topic.data.summary}</p>
         </article>
       ))
     }
   </div>
+  </CollectionFilter>
 </Base>

@@ -1,12 +1,31 @@
 ---
 import ArticleList from '../../components/ArticleList.astro';
+import CollectionFilter from '../../components/CollectionFilter.astro';
 import Base from '../../layouts/Base.astro';
-import { getArticles } from '../../lib/site';
+import { getArticles, getTopics } from '../../lib/site';
 
 const articles = await getArticles();
+const topics = await getTopics();
+const topicsWithArticles = topics.filter((topic) => articles.some((article) => article.data.topics.some((reference) => reference.id === topic.id)));
 ---
 
 <Base title="記事一覧" description="Nabu のすべての記事を新しい順に並べています。">
-  <h1 class="page-title">記事一覧</h1>
-  {articles.length > 0 ? <ArticleList articles={articles} /> : <p>まだ記事はありません。</p>}
+  <header class="collection-header">
+    <p class="eyebrow">これまでの記事</p>
+    <h1 class="page-title">記事一覧</h1>
+    <p class="page-intro">ニュース・解説・分析を、公開日の新しい順に並べています。</p>
+  </header>
+  {articles.length > 0 ? (
+    <CollectionFilter
+      id="articles"
+      total={articles.length}
+      itemLabel="記事"
+      searchLabel="記事を検索"
+      searchPlaceholder="見出しやキーワード"
+      filterLabel="トピック"
+      options={topicsWithArticles.map((topic) => ({ value: topic.id, label: topic.data.label }))}
+    >
+      <ArticleList articles={articles} headingLevel="h2" />
+    </CollectionFilter>
+  ) : <p>まだ記事はありません。</p>}
 </Base>

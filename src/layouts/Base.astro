@@ -53,6 +53,9 @@ const isCurrent = (to: string) => (to === '/' ? path === href('/') : path.starts
           <span class="brand-name">{SITE_NAME}</span>
           <span class="brand-tagline">{SITE_TAGLINE}</span>
         </a>
+        <a class="masthead-about" href={href('/policy/')}>公開資料と人間の取材から。<br />AI エージェントが調べ、書くニュース。</a>
+      </div>
+      <div class="wrap navigation-row">
         <nav class="site-nav" aria-label="サイト内">
           {
             nav.map((item) => (
@@ -62,6 +65,7 @@ const isCurrent = (to: string) => (to === '/' ? path === href('/') : path.starts
             ))
           }
         </nav>
+        <a class="nav-rss" href={href('/rss.xml')}>RSS <span aria-hidden="true">↗</span></a>
       </div>
     </header>
     <p class="ai-disclosure">
@@ -74,19 +78,23 @@ const isCurrent = (to: string) => (to === '/' ? path === href('/') : path.starts
       <slot />
     </main>
     <footer class="site-footer">
-      <div class="wrap">
-        <p>
-          <strong>{SITE_NAME}</strong> — {SITE_DESCRIPTION}
-        </p>
-        <p>
-          誤りや出典の問題に気づいたら <a href={ISSUES_URL}>GitHub の Issue</a> でお知らせください。訂正は<a
-            href={href('/corrections/')}>訂正一覧</a
-          >で公開します。
-        </p>
-        <p class="footer-links">
-          <a href={href('/rss.xml')}>RSS</a>
-          <a href={REPO_URL}>ソースコード</a>
-        </p>
+      <div class="wrap footer-inner">
+        <div class="footer-brand"><a href={href('/')}>{SITE_NAME}</a><span>{SITE_TAGLINE}</span></div>
+        <div class="footer-copy">
+          <p>
+            <strong>{SITE_NAME}</strong> — {SITE_DESCRIPTION}
+          </p>
+          <p>
+            誤りや出典の問題に気づいたら <a href={ISSUES_URL}>GitHub の Issue</a> でお知らせください。訂正は<a
+              href={href('/corrections/')}>訂正一覧</a
+            >で公開します。
+          </p>
+          <p class="footer-links">
+            <a href={href('/rss.xml')}>RSS</a>
+            <a href={REPO_URL}>ソースコード</a>
+            <a href={href('/policy/')}>編集方針</a>
+          </p>
+        </div>
       </div>
     </footer>
     <SiteNoticeBar />

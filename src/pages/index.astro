@@ -7,45 +7,78 @@ import {
   formatDate,
   getArticles,
   getTopics,
+  href,
+  kindLabel,
   statusLabel,
   topicHref,
 } from '../lib/site';
 
 const articles = await getArticles();
-const topics = (await getTopics()).filter((t) => t.data.status !== 'closed');
+const allTopics = await getTopics();
+const topics = allTopics.filter((t) => t.data.status !== 'closed');
+const topicLabels = new Map(allTopics.map((topic) => [topic.id, topic.data.label]));
+const [featured, ...recent] = articles.slice(0, 6);
 ---
 
 <Base>
-  <section class="front-topics" aria-labelledby="topics-heading">
-    <h2 id="topics-heading" class="section-heading">追跡中のトピック</h2>
-    <div class="topic-cards">
-      {
-        topics.map((topic) => {
-          const latest = articlesInTopic(articles, topic.id)[0];
-          return (
-            <article class="topic-card">
-              <p class="kicker">
-                <span class={`status status-${topic.data.status}`}>{statusLabel[topic.data.status]}</span>
-                <span>{formatDate(topic.data.updated)} 更新</span>
-              </p>
-              <h3>
-                <a href={topicHref(topic.id)}>{topic.data.title}</a>
-              </h3>
-              <p>{topic.data.summary}</p>
-              {latest && (
-                <p class="topic-latest">
-                  最新記事: <a href={articleHref(latest)}>{latest.data.title}</a>
-                </p>
-              )}
-            </article>
-          );
-        })
-      }
-    </div>
-  </section>
+  <div class="front-layout">
+    <section class="front-news" aria-labelledby="latest-heading">
+      <div class="section-topline">
+        <h1 id="latest-heading">最新記事</h1>
+        <a class="text-link" href={href('/articles/')}>記事一覧 <span aria-hidden="true">↗</span></a>
+      </div>
+      {featured ? (
+        <>
+          <article class="featured-article">
+            <p class="kicker">
+              <span class="kind">{kindLabel[featured.data.kind]}</span>
+              {featured.data.topics.map((topic) => (
+                <a href={topicHref(topic.id)}>{topicLabels.get(topic.id) ?? topic.id}</a>
+              ))}
+              {featured.data.draft && <span class="draft-badge">下書き</span>}
+            </p>
+            <h2><a href={articleHref(featured)}>{featured.data.title}</a></h2>
+            <p class="lead">{featured.data.lead}</p>
+            <div class="featured-bottom">
+              <p class="meta"><time datetime={featured.data.published.toISOString()}>{formatDate(featured.data.published)}</time></p>
+              <a class="text-link" href={articleHref(featured)}>記事を読む <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+          <ArticleList articles={recent} compact headingLevel="h2" />
+          <a class="archive-link" href={href('/articles/')}>すべての記事を見る <span>{articles.length} 本 <span aria-hidden="true">→</span></span></a>
+        </>
+      ) : <p>まだ記事はありません。</p>}
+    </section>
 
-  <section aria-labelledby="latest-heading">
-    <h2 id="latest-heading" class="section-heading">最新記事</h2>
-    {articles.length > 0 ? <ArticleList articles={articles.slice(0, 20)} /> : <p>まだ記事はありません。</p>}
-  </section>
+    <aside class="front-topics" aria-labelledby="topics-heading">
+      <div class="section-topline">
+        <h2 id="topics-heading">追跡中のトピック</h2>
+        <span class="section-count">全 {topics.length} 件</span>
+      </div>
+      <p class="section-caption">それぞれの経緯・年表・今後の注目点</p>
+      <ol class="topic-index">
+        {topics.slice(0, 6).map((topic, index) => (
+          <li>
+            <span class="topic-number" aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>
+            <div>
+              <h3><a href={topicHref(topic.id)}>{topic.data.title}<span class="topic-arrow" aria-hidden="true">↗</span></a></h3>
+              <p class="meta">
+                <span class={`status status-${topic.data.status}`}>{statusLabel[topic.data.status]}</span>
+                <span>記事 {articlesInTopic(articles, topic.id).length} 本</span>
+              </p>
+              <p class="topic-updated"><time datetime={topic.data.updated.toISOString()}>{formatDate(topic.data.updated)}</time> 更新</p>
+            </div>
+          </li>
+        ))}
+      </ol>
+      {topics.length === 0 && <p>現在、追跡中のトピックはありません。</p>}
+      <a class="archive-link" href={href('/topics/')}>すべてのトピックを見る <span aria-hidden="true">→</span></a>
+      <div class="front-about">
+        <p class="eyebrow">ABOUT NABU</p>
+        <h3>出典から、確かめられる。</h3>
+        <p>記事の末尾に、公開資料の出典と人間による取材情報を示しています。</p>
+        <a class="text-link" href={href('/policy/')}>編集方針を読む <span aria-hidden="true">↗</span></a>
+      </div>
+    </aside>
+  </div>
 </Base>
