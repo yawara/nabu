@@ -21,18 +21,10 @@ const [featured, ...recent] = articles.slice(0, 6);
 ---
 
 <Base>
-  <header class="front-heading">
-    <div>
-      <p class="eyebrow">NABU JOURNAL</p>
-      <h1>出来事を追う。<span>経緯を読む。</span></h1>
-    </div>
-    <p>新しい記事と、継続して追うトピック。<br />公開資料と取材から、いまを伝えます。</p>
-  </header>
-
   <div class="front-layout">
     <section class="front-news" aria-labelledby="latest-heading">
       <div class="section-topline">
-        <h2 id="latest-heading">最新記事</h2>
+        <h1 id="latest-heading">最新記事</h1>
         <a class="text-link" href={href('/articles/')}>記事一覧 <span aria-hidden="true">↗</span></a>
       </div>
       {featured ? (
@@ -45,14 +37,14 @@ const [featured, ...recent] = articles.slice(0, 6);
               ))}
               {featured.data.draft && <span class="draft-badge">下書き</span>}
             </p>
-            <h3><a href={articleHref(featured)}>{featured.data.title}</a></h3>
+            <h2><a href={articleHref(featured)}>{featured.data.title}</a></h2>
             <p class="lead">{featured.data.lead}</p>
             <div class="featured-bottom">
               <p class="meta"><time datetime={featured.data.published.toISOString()}>{formatDate(featured.data.published)}</time></p>
               <a class="text-link" href={articleHref(featured)}>記事を読む <span aria-hidden="true">→</span></a>
             </div>
           </article>
-          <ArticleList articles={recent} compact />
+          <ArticleList articles={recent} compact headingLevel="h2" />
           <a class="archive-link" href={href('/articles/')}>すべての記事を見る <span>{articles.length} 本 <span aria-hidden="true">→</span></span></a>
         </>
       ) : <p>まだ記事はありません。</p>}

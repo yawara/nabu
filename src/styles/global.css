@@ -340,31 +340,6 @@ main > :first-child > .section-heading:first-child {
 
 /* トップ：記事を主に、トピックを短い索引に */
 
-.front-heading {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  gap: 1.5rem;
-  margin-bottom: 2.75rem;
-}
-
-.front-heading h1 {
-  margin: 0;
-  font-size: clamp(1.625rem, 3vw, 2.125rem);
-  letter-spacing: 0.025em;
-}
-
-.front-heading h1 span {
-  margin-left: 0.5em;
-}
-
-.front-heading > p {
-  margin: 0;
-  color: var(--muted);
-  font-size: 0.8125rem;
-  line-height: 1.8;
-}
-
 .front-layout {
   display: grid;
   grid-template-columns: minmax(0, 2.15fr) minmax(0, 1fr);
@@ -381,6 +356,7 @@ main > :first-child > .section-heading:first-child {
   border-bottom: 1px solid var(--rule);
 }
 
+.section-topline h1,
 .section-topline h2 {
   margin: 0;
   font-family: var(--font-sans);
@@ -399,19 +375,19 @@ main > :first-child > .section-heading:first-child {
   border-bottom: 1px solid var(--rule);
 }
 
-.featured-article h3 {
+.featured-article h2 {
   margin: 0.75rem 0 1rem;
   font-size: clamp(1.625rem, 2.4vw, 2.125rem);
   line-height: 1.6;
 }
 
-.featured-article h3 a,
+.featured-article h2 a,
 .topic-index h3 a {
   color: var(--fg);
   text-decoration: none;
 }
 
-.featured-article h3 a:hover,
+.featured-article h2 a:hover,
 .topic-index h3 a:hover {
   text-decoration: underline;
 }
@@ -1097,30 +1073,12 @@ main > :first-child > .section-heading:first-child {
     padding-block: 2rem 3rem;
   }
 
-  .front-heading {
-    display: block;
-    margin-bottom: 2rem;
-  }
-
-  .front-heading h1 span {
-    margin-left: 0.25em;
-  }
-
-  .front-heading h1 {
-    font-size: 1.375rem;
-    line-height: 1.65;
-  }
-
-  .front-heading > p {
-    display: none;
-  }
-
   .front-layout {
     grid-template-columns: 1fr;
     gap: 2.5rem;
   }
 
-  .featured-article h3 {
+  .featured-article h2 {
     font-size: 1.625rem;
   }
 
