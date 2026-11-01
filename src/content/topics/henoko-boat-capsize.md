@@ -2,21 +2,21 @@
 title: 辺野古沖の船転覆事故
 label: 辺野古沖の転覆事故
 summary: >-
-  2026年3月16日、沖縄県名護市の辺野古沖で、研修旅行中の同志社国際高（京都府京田辺市）の生徒らが乗った船2隻が転覆し、2年の女子生徒と船長の2人が死亡した。船は、普天間飛行場（宜野湾市）の名護市辺野古への移設に反対する「ヘリ基地反対協議会」が運航していた。第十一管区海上保安本部が業務上過失致死傷などの疑いで捜査し、運輸安全委員会が原因を調べている。学校法人同志社の特別調査委員会は、学校の安全管理の不備が事故の最大の原因だったとした。京都府は10月9日、同校への私学運営費補助金を2025年度分は50%、2026年度分は25%減らすと発表した。文部科学省は、研修旅行の内容が政治的活動を禁じた教育基本法の規定に反するものだったとする見解を示し、賛否が分かれている。
+  2026年3月16日、沖縄県名護市の辺野古沖で、研修旅行中の同志社国際高の生徒らが乗った船2隻が転覆し、生徒と船長の2人が死亡した。学校法人同志社は10月30日に記者会見し、教育の中立性と適切性を検証する外部委員会を22日に設けたと発表した。遺族は17日に古謝玄太知事、18日に運航団体の共同代表と面会した。県は安全研修を実施し、県議会は海上保安庁などの参考人招致を決めた。運輸安全委員会の調査は11月1日時点で続いている。
 status: active
 started: 2026-03-16
-updated: 2026-10-13
+updated: 2026-11-01
 order: 3
 notices: [allegation, developing]
 people:
   - name: 同志社国際高等学校
-    role: 京都府京田辺市の私立高校。2026年3月の沖縄研修旅行で、2年生が辺野古沖で船に乗った。10月2日、再発防止策を京都府に報告した。
+    role: 京都府京田辺市の私立高校。2026年3月の沖縄研修旅行で、2年生が辺野古沖で船に乗った。10月2日、再発防止策を京都府に報告し、26日に校外学習を一部再開した。
   - name: 学校法人同志社
-    role: 同志社国際高の設置者。特別調査委員会を設けた。八田英二理事長が辞任の意向を示し、西田喜久夫校長を8月31日付で解任した。
+    role: 同志社国際高の設置者。特別調査委員会を設けた。八田英二理事長が辞任の意向を示し、西田喜久夫校長を8月31日付で解任した。10月22日、教育の中立性及び適切性に関する検討委員会を設け、30日に八田氏が事故後初めて記者会見に出席した。
   - name: ヘリ基地反対協議会
-    role: 転覆した船2隻を運航していた団体。辺野古移設に反対する活動をしている。共同代表は仲村善幸氏と浦島悦子氏。事故について謝罪し、責任は協議会にあるとしている。
+    role: 転覆した船2隻を運航していた団体。辺野古移設に反対する活動をしている。共同代表は仲村善幸氏と浦島悦子氏。事故について謝罪し、責任は協議会にあるとしている。10月18日に共同代表2人が遺族と初めて面会した。
   - name: 遺族（亡くなった生徒の両親）
-    role: 学校と協議会の関係者計11人を、業務上過失致死傷などの疑いで告訴した。note で発信している。
+    role: 学校と協議会の関係者計11人を、業務上過失致死傷などの疑いで告訴した。note で発信している。10月17日に知事へ安全確保の仕組みを要望し、18日に協議会と初めて面会した。
   - name: 第十一管区海上保安本部（11管）
     role: 業務上過失致死傷などの疑いで捜査している。本部長は木川嘉将氏。
   - name: 運輸安全委員会
@@ -115,19 +115,125 @@ timeline:
     text: 亡くなった生徒の父親が、補助金の減額を事故の重さに見合った必要な対応と受け止め、学校が約束した教育環境の維持と、教育の中立性についての府の今後の対応を注視するとnoteに書く。
     sources:
       - https://note.com/beloved_tomoka/n/n80a6082ce088
-watch:
+  - date: 2026-10-17
+    text: 亡くなった生徒の両親が県庁で古謝玄太知事と面会し、修学旅行の安全確保と、受入れ先の安全管理体制を確認できる仕組みを求める。
+    sources:
+      - https://www.qab.co.jp/news/20261018309265.html
+      - https://note.com/beloved_tomoka/n/nc99224ff8465
+  - date: 2026-10-18
+    text: 父親がヘリ基地反対協議会の共同代表2人と初めて面会する。父親は検証内容の説明と公表を求めたとし、協議会はMBSニュースに、背景事実の質問に満足に回答できなかったと説明する。
+    sources:
+      - https://note.com/beloved_tomoka/n/n6bae8e276b12
+      - https://news.livedoor.com/article/detail/32677716/
   - date: 2026-10-19
-    text: 沖縄県議会の調査特別委員会が、修学旅行や平和学習について県の担当部局から話を聴く（沖縄テレビ）。その後、参考人を選ぶ。
+    text: 県議会の調査特別委員会が県の関係部局を聴取する。県は、学校が個別手配した事業者を把握できていないことを課題に挙げ、安全ガイドラインを策定する方針を示す。
+    sources:
+      - https://www.qab.co.jp/news/?p=309373
+      - https://www.fnn.jp/articles/-/1135668
+  - date: 2026-10-21
+    text: 沖縄県が県庁で、修学旅行の受入れ事業者らを対象に事故防止や緊急時対応の研修会を開く。沖縄テレビによると、約70人が参加する。
+    sources:
+      - https://www.fnn.jp/articles/-/1137376
+  - date: 2026-10-22
+    text: 学校法人同志社が、外部専門家3人による教育の中立性及び適切性に関する検討委員会を設ける。
+    sources:
+      - https://www.doshisha.ed.jp/information/index.php?c=topics_view&pk=1793265860
+      - https://www.doshisha.ed.jp/usr/dl.php?content_type=topics&pk=1793265860&name=1793265860.pdf&path=4abe7046c2d71b5eaedf5b0efee335a4c26d478f78d10792c9375e3c1212460c95452d3d756e68da06dd597fadcadcaf
+  - date: 2026-10-26
+    text: 同志社国際高が校外学習を一部再開する。
+    sources:
+      - https://www.doshisha.ed.jp/usr/dl.php?content_type=topics&pk=1793265860&name=1793265860.pdf&path=4abe7046c2d71b5eaedf5b0efee335a4c26d478f78d10792c9375e3c1212460c95452d3d756e68da06dd597fadcadcaf
+  - date: 2026-10-30
+    text: 学校法人同志社が記者会見を開き、八田英二理事長が事故後初めて会見に出席して謝罪する。県議会の調査特別委員会は、海上保安庁と沖縄総合事務局の参考人招致を決める。
+    sources:
+      - https://www.doshisha.ed.jp/information/index.php?c=topics_view&pk=1793265860
+      - https://www.fnn.jp/articles/-/1143201
+      - https://www.fnn.jp/articles/-/1143258
+watch:
+  - text: 県議会調査特別委員会が招致を決めた海上保安庁・沖縄総合事務局からの聴取日と結果。遺族の参考人招致を協議した結果。
+  - text: 沖縄県が策定する安全ガイドラインの内容・公表時期と、受入れ事業者の安全管理を確認する仕組み。
   - text: 運輸安全委員会の調査報告書。事故から1年以内に調査を終えられない見込みなら、調査の経過を公表することになっている。
   - text: 第十一管区海上保安本部の捜査の行方（送検するかどうか）。
-  - text: 学校法人同志社が新たに設ける委員会による、教育の中立性と適切性の検討の結果と、法人の記者会見。委員と結論の時期は公表されていない。
+  - text: 学校法人同志社が10月22日に設けた教育の中立性及び適切性に関する検討委員会の結果と公表。検証結果を踏まえた処分と、理事長辞任の時期。
   - text: 京都府が減額を発表した私学運営費補助金について、2025年度分の減額分の返還と、2026年度分の交付。学校の再発防止策の実行と、生徒の学びへの影響を避けるという学校・法人の対応。
   - text: 文部科学省の有識者会議による、学校の危機管理マニュアルのガイドラインの改訂。
-  - text: ヘリ基地反対協議会が、船による海上行動を続けるかどうか。遺族への直接の謝罪が実現するかどうか。
+  - text: ヘリ基地反対協議会が、船による海上行動を続けるかどうか。10月18日の初面会後、協議会が検証の内容を公表し、遺族の要望へどう対応するか。
   - text: 遺族が民事訴訟を起こすかどうか。両親は9月、学校側を相手取った民事訴訟を「やらざるを得ないと考えている」と産経新聞に語った。
   - date: 2027-03
     text: 沖縄県議会の調査特別委員会が、再発防止のための報告書をまとめる（委員長は3月までにまとめたいとしている）。
 sources:
+  - title: "同志社国際高等学校の沖縄研修旅行中に発生した事故後の対応状況と今後の取組みについて"
+    publisher: "学校法人同志社"
+    url: https://www.doshisha.ed.jp/information/index.php?c=topics_view&pk=1793265860
+    date: 2026-10-30
+    accessed: 2026-11-01
+    kind: primary
+  - title: "同志社国際高等学校の沖縄研修旅行中の事故に関する記者会見―配付資料―"
+    publisher: "学校法人同志社"
+    url: https://www.doshisha.ed.jp/usr/dl.php?content_type=topics&pk=1793265860&name=1793265860.pdf&path=4abe7046c2d71b5eaedf5b0efee335a4c26d478f78d10792c9375e3c1212460c95452d3d756e68da06dd597fadcadcaf
+    date: 2026-10-30
+    accessed: 2026-11-01
+    kind: primary
+  - title: "【速報】同志社国際高校　修学旅行での船転覆事故　学校法人「同志社」が会見　教育の中立性について「偏った見方で平和学習を行ったのが問題」理事長は検証結果が出たのちに辞任する意向"
+    publisher: "関西テレビ（FNNプライムオンライン）"
+    url: https://www.fnn.jp/articles/-/1143201
+    date: 2026-10-30
+    accessed: 2026-11-01
+    kind: news
+  - title: "「教育の中立性に問題」辺野古転覆事故受け『学校法人同志社』理事長が会見に初出席 武石知華さんの家族「“説明責任”を一度真剣に考えていただきたい」"
+    publisher: "TBS NEWS DIG（ライブドアニュース配信）"
+    url: https://news.livedoor.com/article/detail/32696305/
+    date: 2026-10-30
+    accessed: 2026-11-01
+    kind: news
+  - title: "10月の沖縄訪問 (上)"
+    publisher: "辺野古ボート転覆事故遺族メモ（遺族のnote）"
+    url: https://note.com/beloved_tomoka/n/nc99224ff8465
+    date: 2026-10-26
+    accessed: 2026-11-01
+    kind: primary
+  - title: "10月の沖縄訪問 (下)"
+    publisher: "辺野古ボート転覆事故遺族メモ（遺族のnote）"
+    url: https://note.com/beloved_tomoka/n/n6bae8e276b12
+    date: 2026-10-26
+    accessed: 2026-11-01
+    kind: primary
+  - title: "【辺野古沖転覆事故】遺族と初面会した抗議船運航の団体「背景事実の質問に満足に回答できず」遺族は「検証進んでいない」と１時間で切り上げ"
+    publisher: "MBSニュース（ライブドアニュース配信）"
+    url: https://news.livedoor.com/article/detail/32677716/
+    date: 2026-10-28
+    accessed: 2026-11-01
+    kind: news
+  - title: "古謝県知事、辺野古沖事故の遺族と面談／遺族「安全管理」を県に要望"
+    publisher: "琉球朝日放送"
+    url: https://www.qab.co.jp/news/20261018309265.html
+    date: 2026-10-18
+    accessed: 2026-11-01
+    kind: news
+  - title: "県の執行部に聞き取り　県議会の辺野古沖船舶転覆事故調査特別委員会"
+    publisher: "琉球朝日放送"
+    url: https://www.qab.co.jp/news/?p=309373
+    date: 2026-10-19
+    accessed: 2026-11-01
+    kind: news
+  - title: "辺野古転覆事故　沖縄県が旅行社など対象に研修会開催へ"
+    publisher: "沖縄テレビ（FNNプライムオンライン）"
+    url: https://www.fnn.jp/articles/-/1135668
+    date: 2026-10-19
+    accessed: 2026-11-01
+    kind: news
+  - title: "修学旅行の安全管理学ぶ研修会　辺野古転覆事故を受け沖縄県が初開催"
+    publisher: "沖縄テレビ（FNNプライムオンライン）"
+    url: https://www.fnn.jp/articles/-/1137376
+    date: 2026-10-21
+    accessed: 2026-11-01
+    kind: news
+  - title: "【辺野古転覆事故】同志社が検討委員会を設置　県議会調査委では遺族の招致を協議"
+    publisher: "沖縄テレビ（FNNプライムオンライン）"
+    url: https://www.fnn.jp/articles/-/1143258
+    date: 2026-10-30
+    accessed: 2026-11-01
+    kind: news
   - title: 令和8年10月9日知事記者会見
     publisher: 京都府
     url: https://www.pref.kyoto.jp/koho/kaiken/2610009.html
@@ -179,7 +285,7 @@ sources:
   - title: 概要（事故等名：船種不詳平和丸転覆 船種不詳不屈転覆）
     publisher: 運輸安全委員会
     url: https://jtsb.mlit.go.jp/jtsb/ship/detail2.php?id=17113
-    accessed: 2026-10-11
+    accessed: 2026-11-01
     kind: primary
   - title: 辺野古沖事故で海保「遺族から告訴状受理」認める　11管本部長「捜査に万全を期す」
     publisher: 産経新聞
@@ -372,13 +478,19 @@ sources:
 
 2026年3月16日午前10時10分ごろ、沖縄県名護市の辺野古崎付近の海で、研修旅行中の同志社国際高（京都府京田辺市）の生徒らが乗った船2隻が相次いで転覆した。乗っていた21人のうち、2年の武石知華（ともか）さん（17）と「不屈」の船長の金井創（かない・はじめ）氏（71）が死亡した（[時事通信](https://www.jiji.com/jc/article?k=2026031701002&g=soc)、[産経新聞](https://www.sankei.com/article/20260319-IGKFKLCI65I5ZPXCEW3UXTCPRE/)、[国土交通省](https://www.mlit.go.jp/report/interview/daijin260522.html)）。船は、普天間飛行場（宜野湾市）の名護市辺野古への移設に反対する「ヘリ基地反対協議会」が運航していた（[日本テレビ](https://news.ntv.co.jp/category/society/15eb2184755d400b8977b9d5ced55b26)）。
 
-10月7日の時点で、第十一管区海上保安本部（11管）は業務上過失致死傷などの疑いで捜査を続けている（[産経新聞](https://www.sankei.com/article/20260917-VY4P5365JFLFVGMX7GD4HQVHWU/)）。国の運輸安全委員会の案件詳細ページは、10月11日の時点でも調査中とし、報告書の公表日は記載していない（[運輸安全委員会](https://jtsb.mlit.go.jp/jtsb/ship/detail2.php?id=17113)）。武石さんの遺族は、学校と協議会の関係者計11人を告訴している（[産経新聞](https://www.sankei.com/article/20260730-ZQS3DJZXZBKHLAE5VFRTZUHCFQ/)）。
+10月7日の時点で、第十一管区海上保安本部（11管）は業務上過失致死傷などの疑いで捜査を続けている（[産経新聞](https://www.sankei.com/article/20260917-VY4P5365JFLFVGMX7GD4HQVHWU/)）。国の運輸安全委員会の案件詳細ページは、11月1日の時点でも調査中とし、報告書の公表日は記載していない（[運輸安全委員会](https://jtsb.mlit.go.jp/jtsb/ship/detail2.php?id=17113)）。武石さんの遺族は、学校と協議会の関係者計11人を告訴している（[産経新聞](https://www.sankei.com/article/20260730-ZQS3DJZXZBKHLAE5VFRTZUHCFQ/)）。
 
-学校法人同志社が設けた特別調査委員会は7月31日、法人に安全配慮義務違反があり、学校の安全管理の不備が事故の最大の原因だったとする報告書を公表した（[特別調査委員会の報告書](https://www.doshisha.ed.jp/usr/dl.php?content_type=topics&pk=1785463079&name=1785463079.pdf&path=4abe7046c2d71b5eaedf5b0efee335a4313f0ea6a76de30babe69a1b21f7de0590adb3642ebce5bc51670b5d19e885ad)）。法人は理事長の辞任の意向と校長の解任を発表し（[学校法人同志社](https://www.doshisha.ed.jp/information/index.php?c=topics_view&pk=1787646780)）、同校は10月2日、再発防止策を京都府に報告した（[同志社国際高](https://www.intnl.doshisha.ac.jp/doshisha-info/?p=7609)）。協議会は事故について謝罪し、責任は協議会にあるとしている。ただ、遺族への直接の謝罪は、9月16日の時点で実現していない（[協議会](https://lovehenoko.org/%e3%80%90%e9%87%8d%e8%a6%81%e3%80%913%e6%9c%8816%e6%97%a5%e3%81%ae%e4%ba%8b%e6%95%85%e3%81%ab%e3%81%8a%e3%81%91%e3%82%8b%e4%b9%97%e8%88%b9%e7%9b%ae%e7%9a%84%e3%81%8a%e3%82%88%e3%81%b3%e4%ba%8b/)、[産経新聞](https://www.sankei.com/article/20260916-IAMZ7JUHCFKL5D7WFDSIVDTAZE/)）。
+学校法人同志社が設けた特別調査委員会は7月31日、法人に安全配慮義務違反があり、学校の安全管理の不備が事故の最大の原因だったとする報告書を公表した（[特別調査委員会の報告書](https://www.doshisha.ed.jp/usr/dl.php?content_type=topics&pk=1785463079&name=1785463079.pdf&path=4abe7046c2d71b5eaedf5b0efee335a4313f0ea6a76de30babe69a1b21f7de0590adb3642ebce5bc51670b5d19e885ad)）。法人は理事長の辞任の意向と校長の解任を発表し（[学校法人同志社](https://www.doshisha.ed.jp/information/index.php?c=topics_view&pk=1787646780)）、同校は10月2日、再発防止策を京都府に報告した（[同志社国際高](https://www.intnl.doshisha.ac.jp/doshisha-info/?p=7609)）。協議会は事故について謝罪し、責任は協議会にあるとしている。遺族への直接の謝罪は、9月16日の時点で実現していなかった（[協議会](https://lovehenoko.org/%e3%80%90%e9%87%8d%e8%a6%81%e3%80%913%e6%9c%8816%e6%97%a5%e3%81%ae%e4%ba%8b%e6%95%85%e3%81%ab%e3%81%8a%e3%81%91%e3%82%8b%e4%b9%97%e8%88%b9%e7%9b%ae%e7%9a%84%e3%81%8a%e3%82%88%e3%81%b3%e4%ba%8b/)、[産経新聞](https://www.sankei.com/article/20260916-IAMZ7JUHCFKL5D7WFDSIVDTAZE/)）。
 
 京都府は10月9日、同校への私学運営費補助金を2025年度分は50%、2026年度分は25%減らすと発表した。研修旅行の安全管理について学校の管理運営が著しく適正を欠くと判断し、2025年度に交付した補助金の減額分は返還を求める。2026年度は、学校が提出した再発防止策に一定の改善策が盛り込まれたことを考慮して減額率を下げた（[京都府](https://www.pref.kyoto.jp/koho/kaiken/2610009.html)）。[読売新聞](https://news.livedoor.com/article/detail/32531175/)によると、学校と法人は、生徒の学びに支障が出ないよう取り組み、保護者に新たな負担を求めないとするコメントを出した。
 
 武石さんの父親は10月10日の[note](https://note.com/beloved_tomoka/n/n80a6082ce088)で、減額を事故の重さに見合った必要な対応と受け止めた。学校の約束が守られるかを見守り、教育の中立性について府が今後どう対応するかも注視すると書いた。
+
+10月18日、父親は協議会の共同代表2人と初めて面会したと26日の[note](https://note.com/beloved_tomoka/n/n6bae8e276b12)で公表した。検証内容の説明が十分でなかったとして調査と公表を求め、協議会も[MBSニュース](https://news.livedoor.com/article/detail/32677716/)に、背景事実への質問に満足に回答できなかったと説明した。
+
+法人は10月30日に記者会見し、安全管理体制や組織風土の問題を認めた。22日付で外部専門家3人による教育の中立性及び適切性に関する検討委員会を設置し、結果をまとまり次第公表するとしている（[学校法人同志社](https://www.doshisha.ed.jp/information/index.php?c=topics_view&pk=1793265860)）。[関西テレビ](https://www.fnn.jp/articles/-/1143201)によると、八田氏は事故後初めて会見に出席して謝罪し、検証結果の後に辞任する意向を示した。
+
+17日に知事と面会した遺族は、修学旅行の安全を確認できる仕組みを求めた（[琉球朝日放送](https://www.qab.co.jp/news/20261018309265.html)）。県は21日に受入れ事業者らへの安全研修を開き、県議会調査特別委員会は30日に海上保安庁などの参考人招致を決めた（[沖縄テレビの研修会報道](https://www.fnn.jp/articles/-/1137376)、[30日の報道](https://www.fnn.jp/articles/-/1143258)）。
 
 経緯の詳細は、このトピックの記事にまとめている。
 
@@ -390,4 +502,4 @@ sources:
 
 遺族は8月14日の note で、中立な立場での検証に加え、関係者や遺族、卒業生への聞き取りを求めた。教育内容の検証が終わるのを待たずに安全対策を進め、教職員の処分だけで検証を終わらせないよう訴えている（[遺族の note](https://note.com/beloved_tomoka/n/nfe54178d50c2)）。
 
-**研修旅行の内容**　文部科学省は、辺野古への移設工事に関する学習が、政治的活動を禁じた教育基本法14条2項に「反するものであったと考えられ」るとする見解を示した（[文部科学省の見解](https://www.mext.go.jp/content/202600525-ope_dev02-000050128_1.pdf)）。高市早苗首相は「過度な介入とは考えていない」と述べ（[読売新聞](https://www.yomiuri.co.jp/politics/20260623-GYT1T00409/)）、国民民主党の榛葉賀津也幹事長や遺族は文科省の判断を評価した（[産経新聞](https://www.sankei.com/article/20260522-URF4PF3XEZBJNDJV4JYNBZ2GNY/)、[遺族の note](https://note.com/beloved_tomoka/n/nbf751abe1a82)）。一方、京都弁護士会や日本教育法学会、当時知事だった玉城デニー氏らは、教育内容への行政の介入だと批判している（[京都弁護士会](https://www.kyotoben.or.jp/pages_kobetu.cfm?id=10000772&s=seimei)、[日本教育法学会](https://jela1970.jp/statement.html)、[沖縄県](https://www.pref.okinawa.lg.jp/_res/projects/default_project/_page_/001/039/477/260529_kaiken.pdf)）。同志社の特別調査委員会はこの点を調査の対象外とし、法人が新たに設ける委員会が検討する（[学校法人同志社](https://www.doshisha.ed.jp/information/index.php?c=topics_view&pk=1787828438)）。
+**研修旅行の内容**　文部科学省は、辺野古への移設工事に関する学習が、政治的活動を禁じた教育基本法14条2項に「反するものであったと考えられ」るとする見解を示した（[文部科学省の見解](https://www.mext.go.jp/content/202600525-ope_dev02-000050128_1.pdf)）。高市早苗首相は「過度な介入とは考えていない」と述べ（[読売新聞](https://www.yomiuri.co.jp/politics/20260623-GYT1T00409/)）、国民民主党の榛葉賀津也幹事長や遺族は文科省の判断を評価した（[産経新聞](https://www.sankei.com/article/20260522-URF4PF3XEZBJNDJV4JYNBZ2GNY/)、[遺族の note](https://note.com/beloved_tomoka/n/nbf751abe1a82)）。一方、京都弁護士会や日本教育法学会、当時知事だった玉城デニー氏らは、教育内容への行政の介入だと批判している（[京都弁護士会](https://www.kyotoben.or.jp/pages_kobetu.cfm?id=10000772&s=seimei)、[日本教育法学会](https://jela1970.jp/statement.html)、[沖縄県](https://www.pref.okinawa.lg.jp/_res/projects/default_project/_page_/001/039/477/260529_kaiken.pdf)）。同志社の特別調査委員会はこの点を調査の対象外とし、法人が10月22日に設けた委員会が検討する（[学校法人同志社](https://www.doshisha.ed.jp/information/index.php?c=topics_view&pk=1793265860)）。

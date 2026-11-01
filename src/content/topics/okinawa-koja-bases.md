@@ -2,12 +2,12 @@
 title: 古謝県政と沖縄の米軍基地
 label: 沖縄・古謝県政
 summary: >-
-  2026年9月の沖縄県知事選で、普天間飛行場（宜野湾市）の名護市辺野古への移設を容認する古謝玄太氏が初当選し、9月30日に知事に就任した。古謝知事は移設を容認する一方、普天間の返還期日の明確化や日米地位協定の改定を政府に求めている。10月に米海兵隊員が強盗殺人の疑いで逮捕された事件を受け、県議会は地位協定の抜本改定などを求める抗議決議を可決した。日米外相は10月10日、実効性のある事件防止措置を取るため協議していくことを確認した。
+  辺野古移設を容認する古謝玄太知事は、米軍オスプレイの配備撤回も求めない一方、安全対策や県外への一部移駐を政府に要求している。那覇市の女性殺害事件では米海兵隊員が10月25日に強盗殺人罪で起訴され、日米は再発防止策の協議を続けている。同日の那覇市長選では知念覚氏が再選された。
 status: active
 started: 2026-09-13
-updated: 2026-10-13
+updated: 2026-11-01
 order: 1
-notices: [developing]
+notices: [litigation, allegation, developing]
 people:
   - name: 古謝玄太
     role: 沖縄県知事（2026年9月30日就任）。前那覇市副市長で、元総務省職員。辺野古移設を容認している。
@@ -20,7 +20,7 @@ people:
   - name: 茂木敏充
     role: 外相
   - name: 知念覚
-    role: 那覇市長。米兵による事件で、県と連名で米側に抗議した。
+    role: 那覇市長。2026年10月25日に再選。米兵による事件で、県と連名で米側に抗議した。
   - name: ベンジャミン・ワトソン
     role: 米海兵隊中将。在沖米軍トップで、第3海兵遠征軍司令官。
   - name: ジョージ・グラス
@@ -88,10 +88,11 @@ timeline:
       - https://www.okinawatimes.co.jp/articles/-/1938233
       - https://www.kantei.go.jp/jp/105/statement/2026/1005shoshinhyomei.html
   - date: 2026-10-06
-    text: 県議会の10月定例会が開会し、古謝氏が就任後初めての所信表明をする。辺野古移設を「一刻も早い返還に向けた現実的な解決策として、容認する」と改めて述べる。
+    text: 県議会の10月定例会が開会し、古謝氏が就任後初めての所信表明をする。普天間飛行場の危険性を早く取り除く現実的な解決策として辺野古移設を容認し、嘉手納以南の施設返還の着実な実施を国に求める。
     sources:
       - https://www.okinawatimes.co.jp/articles/-/1938869
       - https://www.asahi.com/articles/ASVB60T9QVB6UTIL00WM.html
+      - https://www.pref.okinawa.jp/kensei/kencho/1001519/1001521/1041622.html
   - date: 2026-10-06
     text: 在沖米軍トップのワトソン中将が、沖縄にいるすべての米軍人に、7日正午から48時間の作戦活動の停止と、基地の外への外出と基地の内外での飲酒の禁止を指示する。9日からの30日間は午前0時から5時までの外出を禁じる。那覇市議会は、日米地位協定の改定などを求める抗議決議を全会一致で可決する。
     sources:
@@ -107,25 +108,69 @@ timeline:
     sources:
       - https://www.saitama-np.co.jp/articles/218482/postDetail
       - https://www.fnn.jp/articles/-/1130132
+      - https://www.pref.okinawa.lg.jp/_res/projects/default_project/_page_/001/041/602/1009_giin02.pdf
+      - https://www.pref.okinawa.lg.jp/_res/projects/default_project/_page_/001/041/602/1009_sanpi02.pdf
   - date: 2026-10-09
     text: 県議会が翁長政俊氏の副知事人事に同意し、古謝知事が同日辞令を交付する。任期は9日から4年間。
     sources:
       - https://kumanichi.com/articles/2045094
+      - https://www.pref.okinawa.lg.jp/_res/projects/default_project/_page_/001/041/602/1009_giansyori01.pdf
+      - https://www.pref.okinawa.lg.jp/_res/projects/default_project/_page_/001/041/602/1006_otsugou01.pdf
   - date: 2026-10-10
     text: 茂木外相とルビオ米国務長官が電話会談する。日本側発表は実効性のある事件防止措置に向けた日米協議の確認を説明し、米側発表は哀悼と捜査への全面協力を伝える。
     sources:
       - https://www.mofa.go.jp/mofaj/press/release/pressit_000001_04277.html
       - https://www.state.gov/releases/office-of-the-spokesman/2026/10/secretary-rubios-call-with-japanese-foreign-minister-motegi/
+  - date: 2026-10-22
+    text: 嘉手納基地で、所属・配属されるE1〜E4の米軍人を対象に飲酒禁止と午後10時から午前5時までの基地内待機の追加措置が始まる（Stars and Stripes報道）。
+    sources:
+      - https://www.stripes.com/theaters/asia_pacific/2026-10-23/alcohol-ban-kadena-okinawa-23236848.html
+  - date: 2026-10-23
+    text: 沖縄防衛局が、米軍のミサイル発射装置「タイフォン」の嘉手納基地への到着を公表する。到着日や台数は明らかにしない（共同通信報道）。
+    sources:
+      - https://kumanichi.com/articles/2049961
+  - date: 2026-10-25
+    text: 那覇地検が、女性殺害事件で米海兵隊上等兵の男（20）を強盗殺人罪で起訴する。起訴時の認否は公表しない（琉球朝日放送報道）。
+    sources:
+      - https://www.qab.co.jp/news/20261025310059.html
+  - date: 2026-10-25
+    text: 那覇市長選で現職の知念覚氏が6万3306票を得て再選される。投票率は35.81%。
+    sources:
+      - https://www.city.naha.okinawa.jp/_res/projects/default_project/_page_/001/012/245/kaihyousaisyuu.pdf
+      - https://www.city.naha.okinawa.jp/_res/projects/default_project/_page_/001/012/245/toujyousokuhousaisyuu.pdf
+      - https://www.qab.co.jp/news/20261026310083.html
+  - date: 2026-10-25
+    text: 豊見城市長選で現職の徳元次人氏が1万4759票を得て再選される。投票率は50.51%。
+    sources:
+      - https://www.city.tomigusuku.lg.jp/material/files/group/39/sityousaisyuuu.pdf
+      - https://www.qab.co.jp/news/20261026310083.html
+  - date: 2026-10-27
+    text: 古謝知事が定例会見でオスプレイ配備撤回を求めない立場と、12機程度の県外移駐などを引き続き求める意向を説明する。安全性への懸念は残ると述べる。
+    sources:
+      - https://www.pref.okinawa.jp/_res/projects/default_project/_page_/001/041/582/261027_kaiken.pdf
+  - date: 2026-10-27
+    text: 市民団体が知事のオスプレイ配備容認等に反対する声明と請願を県に提出する（琉球放送報道）。
+    sources:
+      - https://newsdig.tbs.co.jp/articles/rbc/3048096?display=1
+  - date: 2026-10-30
+    text: 小泉防衛相が、日米のハイレベル実務者を中心に再発防止策の協議を続け、結論が出たものから公表・実行すると説明する。
+    sources:
+      - https://www.mod.go.jp/j/press/kisha/2026/1030a.html
+  - date: 2026-10-31
+    text: 夜間外出禁止時間帯の午前0時25分ごろ、沖縄市で米海兵隊伍長の男（21）が酒気帯び運転の疑いで現行犯逮捕される。容疑を認めていると琉球朝日放送が報道する。
+    sources:
+      - https://www.qab.co.jp/news/20261031310879.html
 watch:
   - text: 10月10日の日米外相会談で確認した協議の進展と、具体的な事件防止措置の公表。
   - text: 米軍が見直すとしている外出規則の内容と、沖縄地域調整委員会での協議の結果。
-  - date: 2026-10-25
-    text: 那覇市長選の投開票（10月18日告示）。現職の知念覚氏が2期目を目指して立候補する見通し（沖縄タイムス、5月時点）。
   - date: '2026'
     text: 知事と関係閣僚が基地負担の軽減や振興策を話し合う沖縄政策協議会を、年内に開けるか。古謝知事は「年内開催に向け、調整を早期に進めていきたい」としている。
-  - text: 米兵による事件の捜査の行方と、検察が起訴するかどうか。
+  - text: 強盗殺人罪で起訴された米海兵隊員の公判日程と、検察・被告人側の主張。
+  - date: 2026-11-08
+    text: 米軍の反省期間の終了に向けた措置の継続・変更と、日米の再発防止協議の結果。嘉手納の追加措置は同日までを予定するとStars and Stripesが報じた。
   - text: 政府が普天間飛行場の返還期日を示すかどうか。
-  - text: 米軍の中距離ミサイル発射装置「タイフォン」の嘉手納基地での保管について、政府が県に説明するかどうか。
+  - text: 嘉手納基地に到着したタイフォンの保管期間や運用の説明と、県・地元自治体への対応。
+  - text: オスプレイの安全対策、県外への一部移駐などの要求と、政府・米軍・地元市町村の対応。
 sources:
   - title: 沖縄県知事選挙 開票速報（最終、9月16日訂正）
     publisher: 沖縄県選挙管理委員会
@@ -418,9 +463,166 @@ sources:
     date: 2026-10-10
     accessed: 2026-10-11
     kind: news
+  - title: 海兵隊の男による強盗殺人事件　那覇地検が起訴
+    publisher: 沖縄テレビ（FNNプライムオンライン配信）
+    url: https://www.fnn.jp/articles/-/1139547
+    date: 2026-10-25
+    accessed: 2026-11-01
+    kind: news
+  - title: 令和8年10月25日執行 那覇市長選挙 選挙公報
+    publisher: 那覇市選挙管理委員会（各候補者の提出原稿）
+    url: https://www.city.naha.okinawa.jp/_res/projects/default_project/_page_/001/012/245/senkyokouhou.pdf
+    accessed: 2026-11-01
+    kind: primary
+  - title: 古謝知事 訓練時の民間空港の使用「否定することは不合理」
+    publisher: 琉球朝日放送
+    url: https://www.qab.co.jp/news/20261027310308.html
+    date: 2026-10-27
+    accessed: 2026-11-01
+    kind: news
+  - title: 防衛大臣記者会見（令和8年9月29日）
+    publisher: 防衛省
+    url: https://www.mod.go.jp/j/press/kisha/2026/0929a.html
+    date: 2026-09-29
+    accessed: 2026-11-01
+    kind: primary
+  - title: 長距離ミサイルシステム・高機動ロケット砲の嘉手納基地での保管計画に町長が抗議
+    publisher: 琉球朝日放送
+    url: https://www.qab.co.jp/news/20260929307247.html
+    date: 2026-09-29
+    accessed: 2026-11-01
+    kind: news
+  - title: 那覇ホテル米兵強殺事件 米海兵隊の男を起訴
+    publisher: 琉球朝日放送
+    url: https://www.qab.co.jp/news/20261025310059.html
+    date: 2026-10-25
+    accessed: 2026-11-01
+    kind: news
+  - title: 開票速報（最終確定）
+    publisher: 那覇市選挙管理委員会
+    url: https://www.city.naha.okinawa.jp/_res/projects/default_project/_page_/001/012/245/kaihyousaisyuu.pdf
+    date: 2026-10-25
+    accessed: 2026-11-01
+    kind: primary
+  - title: 投票速報（最終確定）
+    publisher: 那覇市選挙管理委員会
+    url: https://www.city.naha.okinawa.jp/_res/projects/default_project/_page_/001/012/245/toujyousokuhousaisyuu.pdf
+    date: 2026-10-25
+    accessed: 2026-11-01
+    kind: primary
+  - title: 那覇市・豊見城市長選挙　現職が再選
+    publisher: 琉球朝日放送
+    url: https://www.qab.co.jp/news/20261026310083.html
+    date: 2026-10-26
+    accessed: 2026-11-01
+    kind: news
+  - title: 記者会見録（令和8年10月27日）
+    publisher: 沖縄県
+    url: https://www.pref.okinawa.jp/_res/projects/default_project/_page_/001/041/582/261027_kaiken.pdf
+    date: 2026-10-27
+    accessed: 2026-11-01
+    kind: primary
+  - title: オスプレイ配備容認に断固反対 市民団体が緊急声明
+    publisher: 琉球放送（TBS NEWS DIG配信）
+    url: https://newsdig.tbs.co.jp/articles/rbc/3048096?display=1
+    date: 2026-10-29
+    accessed: 2026-11-01
+    kind: news
+  - title: 酒気帯び運転で米海兵隊の男を逮捕
+    publisher: 琉球朝日放送
+    url: https://www.qab.co.jp/news/20261031310879.html
+    date: 2026-10-31
+    accessed: 2026-11-01
+    kind: news
+  - title: 防衛大臣記者会見（令和8年10月30日）
+    publisher: 防衛省
+    url: https://www.mod.go.jp/j/press/kisha/2026/1030a.html
+    date: 2026-10-30
+    accessed: 2026-11-01
+    kind: primary
+  - title: Kadena bans alcohol for junior enlisted troops, imposes earlier curfew
+    publisher: Stars and Stripes
+    url: https://www.stripes.com/theaters/asia_pacific/2026-10-23/alcohol-ban-kadena-okinawa-23236848.html
+    date: 2026-10-23
+    accessed: 2026-11-01
+    kind: news
+  - title: 米軍タイフォン嘉手納基地に到着　ミサイル発射装置を保管
+    publisher: 共同通信（熊本日日新聞配信）
+    url: https://kumanichi.com/articles/2049961
+    date: 2026-10-23
+    accessed: 2026-11-01
+    kind: news
+  - title: 令和8年10月6日　知事就任あいさつ
+    publisher: 沖縄県
+    url: https://www.pref.okinawa.jp/kensei/kencho/1001519/1001521/1041622.html
+    date: 2026-10-06
+    accessed: 2026-11-01
+    kind: primary
+  - title: 米海兵隊員による女性強盗殺人事件に関する抗議決議
+    publisher: 沖縄県議会
+    url: https://www.pref.okinawa.lg.jp/_res/projects/default_project/_page_/001/041/602/1009_giin02.pdf
+    date: 2026-10-09
+    accessed: 2026-11-01
+    kind: primary
+  - title: 米海兵隊員による女性強盗殺人事件に関する意見書
+    publisher: 沖縄県議会
+    url: https://www.pref.okinawa.lg.jp/_res/projects/default_project/_page_/001/041/602/1009_giin01.pdf
+    date: 2026-10-09
+    accessed: 2026-11-01
+    kind: primary
+  - title: 議案等に対する議員の賛否の状況（10月9日議決分・議員提出議案）
+    publisher: 沖縄県議会
+    url: https://www.pref.okinawa.lg.jp/_res/projects/default_project/_page_/001/041/602/1009_sanpi02.pdf
+    date: 2026-10-09
+    accessed: 2026-11-01
+    kind: primary
+  - title: 議案処理一覧表（10月9日議決分・知事提出議案）
+    publisher: 沖縄県議会
+    url: https://www.pref.okinawa.lg.jp/_res/projects/default_project/_page_/001/041/602/1009_giansyori01.pdf
+    date: 2026-10-09
+    accessed: 2026-11-01
+    kind: primary
+  - title: 乙号議案（その2）・乙第15号議案「副知事の選任について」
+    publisher: 沖縄県
+    url: https://www.pref.okinawa.lg.jp/_res/projects/default_project/_page_/001/041/602/1006_otsugou01.pdf
+    date: 2026-10-06
+    accessed: 2026-11-01
+    kind: primary
+  - title: 議案処理一覧表（10月9日議決分・議員提出議案）
+    publisher: 沖縄県議会
+    url: https://www.pref.okinawa.lg.jp/_res/projects/default_project/_page_/001/041/602/1009_giansyori02.pdf
+    date: 2026-10-09
+    accessed: 2026-11-01
+    kind: primary
+  - title: 令和8年10月25日執行 豊見城市長選挙 開票結果（最終）
+    publisher: 豊見城市選挙管理委員会
+    url: https://www.city.tomigusuku.lg.jp/material/files/group/39/sityousaisyuuu.pdf
+    date: 2026-10-25
+    accessed: 2026-11-01
+    kind: primary
+  - title: 令和8年10月25日執行 豊見城市長選挙 投票速報
+    publisher: 豊見城市選挙管理委員会
+    url: https://www.city.tomigusuku.lg.jp/material/files/group/39/202610252000.pdf
+    date: 2026-10-25
+    accessed: 2026-11-01
+    kind: primary
+  - title: 豊見城市長選挙公報
+    publisher: 豊見城市選挙管理委員会（各候補者の提出原稿）
+    url: https://www.city.tomigusuku.lg.jp/material/files/group/39/senkyokouhou-sityou.pdf
+    accessed: 2026-11-01
+    kind: primary
+  - title: 豊見城市長選挙立候補者一覧
+    publisher: 豊見城市選挙管理委員会
+    url: https://www.city.tomigusuku.lg.jp/material/files/group/39/rikkouho_itiran.pdf
+    accessed: 2026-11-01
+    kind: primary
 ---
 
 ## いまの状況
+
+古謝玄太知事は[10月27日の定例会見](https://www.pref.okinawa.jp/_res/projects/default_project/_page_/001/041/582/261027_kaiken.pdf)で、米軍オスプレイの配備撤回を求めない一方、安全対策と12機程度の県外移駐などを求めると説明した。那覇市の女性殺害事件では[25日に米海兵隊員が強盗殺人罪で起訴された](https://www.qab.co.jp/news/20261025310059.html)。小泉防衛相は[30日、日米の再発防止協議を継続中と説明した](https://www.mod.go.jp/j/press/kisha/2026/1030a.html)。
+
+那覇市長選は25日に投開票され、[知念覚氏が再選された](https://www.qab.co.jp/news/20261026310083.html)。また、沖縄防衛局は[23日、タイフォンの嘉手納基地への到着を公表した](https://kumanichi.com/articles/2049961)。
 
 2026年9月13日の沖縄県知事選で、普天間飛行場（宜野湾市）の名護市辺野古への移設を容認する古謝玄太（こじゃ・げんた）氏が初当選し、9月30日に知事に就任した。[共同通信](https://www.nishinippon.co.jp/item/1543464/)は、辺野古移設を容認する県政への転換は12年ぶりだと伝えている。
 
@@ -430,11 +632,13 @@ sources:
 
 **10月13日訂正**：上の段落で、米軍が6日に外出・飲酒を制限したとしていた記述を、6日に制限すると発表した記述に直した。外出・飲酒禁止の開始は7日正午だった（[第3海兵遠征軍の X](https://x.com/IIIMEF/status/2107465093801775266)）。
 
-10月6日には、県議会の10月定例会で就任後初めての所信表明をした。[沖縄タイムス](https://www.okinawatimes.co.jp/articles/-/1938869)によると、10年間で県民所得を500万円にする、4年間で子育て予算を1000億円に増やす、8年間で観光収入を2兆円にする、という三つの目標を掲げた。辺野古移設については「一刻も早い返還に向けた現実的な解決策として、容認する」と改めて述べた（[朝日新聞](https://www.asahi.com/articles/ASVB60T9QVB6UTIL00WM.html)）。
+10月6日には、県議会の10月定例会で就任後初めての所信表明をした。[沖縄タイムス](https://www.okinawatimes.co.jp/articles/-/1938869)によると、10年間で県民所得を500万円にする、4年間で子育て予算を1000億円に増やす、8年間で観光収入を2兆円にする、という三つの目標を掲げた。[県が公表した全文](https://www.pref.okinawa.jp/kensei/kencho/1001519/1001521/1041622.html)によると、基地政策では、普天間飛行場の危険性を早く取り除くため辺野古移設を容認し、統合計画にある嘉手納飛行場より南の施設・区域の返還を着実に進めるよう国に求めた。冒頭には、米兵事件を受けて地位協定の見直しを含む抜本対策を求める考えも記した。
 
 10月10日、茂木敏充外相とマルコ・ルビオ米国務長官が電話会談した。[外務省](https://www.mofa.go.jp/mofaj/press/release/pressit_000001_04277.html)によると、実効性のある事件防止措置を取るため日米で協議することを確認した。[米国務省](https://www.state.gov/releases/office-of-the-spokesman/2026/10/secretary-rubios-call-with-japanese-foreign-minister-motegi/)は、ルビオ氏が哀悼の意と捜査への全面的な協力の決意を伝えたと説明している。
 
 9日には、県議会が地位協定の抜本改定などを求める抗議決議と意見書を可決した（[共同通信](https://www.saitama-np.co.jp/articles/218482/postDetail)）。同じ日に、元自民党県連会長の翁長政俊氏が副知事に就任した（[共同通信](https://kumanichi.com/articles/2045094)）。
+
+**11月1日の更新**：10月6日の所信表明について、報道に基づき「一刻も早い返還に向けた現実的な解決策として、容認する」と引用していた。県公表全文は「一刻も早い危険性除去に向けた現実的な解決策として辺野古移設を容認」と記しているため、全文に基づく要旨へ改め、出典を追加した。
 
 ## 知事選の結果
 
@@ -450,7 +654,11 @@ sources:
 
 **日米地位協定**　候補者アンケートでは「運用改善だけでは足りず、改定を求めます」と答え、「立入調査、環境調査、被疑者の身柄、訓練の規制について県の関与を明文化すべきです」としている。
 
-**自衛隊の配備と米軍のミサイル**　政府が進める南西諸島の防衛力強化について、9月30日の就任会見で「一定の自衛力は理解する」としつつ「無条件に受け入れるわけではない」と述べた（[時事通信](https://www.jiji.com/jc/article?k=2026093000940&g=pol)）。米軍の中距離ミサイル発射装置「タイフォン」を嘉手納基地に保管する計画については「十分な説明がなされていない」として、保管の理由や期間を説明するよう政府に求めた。
+**自衛隊の配備と米軍のミサイル**　政府が進める南西諸島の防衛力強化について、9月30日の就任会見で「一定の自衛力は理解する」としつつ「無条件に受け入れるわけではない」と述べた（[時事通信](https://www.jiji.com/jc/article?k=2026093000940&g=pol)）。米軍の中距離ミサイル発射装置「タイフォン」を嘉手納基地に保管する計画については「十分な説明がなされていない」として、保管の理由や期間を説明するよう政府に求めた。10月23日には、防衛局が嘉手納基地への到着を公表したと[共同通信](https://kumanichi.com/articles/2049961)が伝えた。到着日や台数は明らかにしていない。
+
+**オスプレイ**　[10月27日の県会見録](https://www.pref.okinawa.jp/_res/projects/default_project/_page_/001/041/582/261027_kaiken.pdf)によると、古謝氏は辺野古容認との整合性や運用の実態を理由に、配備撤回を求めない立場を示した。ただし、安全性への懸念は残るとし、国に対策と説明を求め、12機程度の県外移駐や長期ローテーションも引き続き要求するとした。27日には市民団体が配備容認などに反対する声明と請願を県に提出した（[琉球放送](https://newsdig.tbs.co.jp/articles/rbc/3048096?display=1)）。
+
+沖縄政策協議会については、[27日の会見](https://www.pref.okinawa.jp/_res/projects/default_project/_page_/001/041/582/261027_kaiken.pdf)で日程は調整中と説明し、次年度予算の要求も念頭に年内開催を求めた。
 
 ## 政府の立場
 
@@ -472,9 +680,9 @@ sources:
 
 移設に反対する「ヘリ基地反対協議会」が運航する船2隻は、2026年3月16日、研修旅行中の高校生らを乗せて辺野古沖で転覆し、高校生と船長の2人が死亡した（[時事通信](https://www.jiji.com/jc/article?k=2026031701002&g=soc)、[日本テレビ](https://news.ntv.co.jp/category/society/15eb2184755d400b8977b9d5ced55b26)）。この事故については、トピック「[辺野古沖の船転覆事故](../henoko-boat-capsize/)」で伝えている。
 
-## 米兵による強盗殺人容疑事件
+## 米兵の強盗殺人事件の捜査と起訴
 
-10月3日未明に那覇市のホテルで女性が殺害され、財布などが奪われた事件で、県警は4日、普天間飛行場所属の米海兵隊上等兵の男（20）を強盗殺人の疑いで緊急逮捕した（[沖縄タイムス](https://www.okinawatimes.co.jp/articles/-/1937577)）。上等兵は容疑を否認している（[沖縄タイムス](https://www.okinawatimes.co.jp/articles/-/1938276)）。
+10月3日未明に那覇市のホテルで女性が殺害され、財布などが奪われた事件で、県警は4日、普天間飛行場所属の米海兵隊上等兵の男（20）を強盗殺人の疑いで緊急逮捕した（[沖縄タイムス](https://www.okinawatimes.co.jp/articles/-/1937577)）。逮捕時、上等兵は容疑を否認していた（[沖縄タイムス](https://www.okinawatimes.co.jp/articles/-/1938276)）。
 
 古謝氏は5日、外務省と防衛省の沖縄の出先機関の幹部や在沖米軍トップを県庁に呼んで抗議し、「日米地位協定の見直しを含め、実効性ある抜本的対策を講じるよう強く求める」と述べた（[沖縄タイムス](https://www.okinawatimes.co.jp/articles/-/1938233)）。在沖米軍トップは謝罪しなかった。古謝氏は、容疑者が否認していて有罪が確定していない中で謝罪はできないと、米側から事前に説明があったと明かした（[朝日新聞](https://www.asahi.com/articles/ASVB52HMTVB5UTIL008M.html)）。政府側も、茂木敏充外相がジョージ・グラス駐日米国大使に抗議し、再発防止の徹底を求めた（[沖縄タイムス](https://www.okinawatimes.co.jp/articles/-/1937756)）。
 
@@ -486,6 +694,19 @@ sources:
 
 [AFP](https://thepeninsulaqatar.com/article/10/10/2026/rubio-offers-japan-fm-condolences-over-murder-linked-to-us-marine)は、午前0時から5時までの30日間の外出制限が9日に始まったと伝えている。10日の外相会談の日本側発表には、具体的な再発防止策や地位協定の改定に合意したとの記載はない（[外務省](https://www.mofa.go.jp/mofaj/press/release/pressit_000001_04277.html)）。
 
+[琉球朝日放送](https://www.qab.co.jp/news/20261025310059.html)によると、那覇地検は25日、上等兵の男を強盗殺人罪で起訴した。検察は起訴時の認否を公表していない。[30日の防衛相会見](https://www.mod.go.jp/j/press/kisha/2026/1030a.html)では、実効性のある事件防止措置について日米の実務者協議を続けていると説明された。
+
+[Stars and Stripes](https://www.stripes.com/theaters/asia_pacific/2026-10-23/alcohol-ban-kadena-okinawa-23236848.html)は、嘉手納基地に所属・配属されるE1〜E4の米軍人に対し、22日から飲酒禁止と午後10時から午前5時までの基地内待機の追加措置が取られたと報じた。一方、[琉球朝日放送](https://www.qab.co.jp/news/20261031310879.html)によると、31日午前0時25分ごろ、沖縄市で米海兵隊伍長の男（21）が酒気帯び運転の疑いで現行犯逮捕された。容疑を認めているという。
+
+[県議会の正式な決議](https://www.pref.okinawa.lg.jp/_res/projects/default_project/_page_/001/041/602/1009_giin02.pdf)と[意見書](https://www.pref.okinawa.lg.jp/_res/projects/default_project/_page_/001/041/602/1009_giin01.pdf)は、身柄引渡条項などを含む地位協定の抜本改定、犯罪防止策の遵守状況の公表、短期滞在の米兵への規律・人権教育も要求している。[議会の賛否資料](https://www.pref.okinawa.lg.jp/_res/projects/default_project/_page_/001/041/602/1009_sanpi02.pdf)でも、両案の賛成45人、反対2人を確認できる。
+
 ## 副知事の就任
 
 [共同通信](https://kumanichi.com/articles/2045094)によると、県議会は9日、元自民党県連会長の翁長政俊氏を副知事に充てる人事に同意した。同日、古謝氏が辞令を交付した。任期は9日から4年間。古謝氏は県と国のつなぎ役として県行政の発展に尽力するよう求め、翁長氏は国に沖縄振興予算の増額を要請し、3000億円超の確保を目指す考えを示した。
+
+
+[県議会の議案処理一覧](https://www.pref.okinawa.lg.jp/_res/projects/default_project/_page_/001/041/602/1009_giansyori01.pdf)でも、10月9日に副知事選任議案へ同意したことが分かる。[乙第15号議案](https://www.pref.okinawa.lg.jp/_res/projects/default_project/_page_/001/041/602/1006_otsugou01.pdf)の対象は翁長政俊氏である。
+
+## 那覇・豊見城市長選
+
+10月25日に投開票された那覇市長選と豊見城市長選では、いずれも現職が再選された（[琉球朝日放送](https://www.qab.co.jp/news/20261026310083.html)）。市選管の確定結果によると、[那覇](https://www.city.naha.okinawa.jp/_res/projects/default_project/_page_/001/012/245/kaihyousaisyuu.pdf)は知念覚氏が6万3306票、[豊見城](https://www.city.tomigusuku.lg.jp/material/files/group/39/sityousaisyuuu.pdf)は徳元次人氏が1万4759票を得た。

@@ -3,11 +3,41 @@ title: 辺野古沖の転覆事故、海保の捜査続く 同志社国際高は
 lead: >-
   沖縄県名護市の辺野古沖で3月16日、研修旅行中の同志社国際高（京都府京田辺市）の生徒らが乗った船2隻が転覆し、2年の女子生徒（17）と船長（71）が死亡した事故で、第十一管区海上保安本部は業務上過失致死傷などの疑いで捜査を続けている。学校法人同志社が設けた特別調査委員会は7月、学校の安全管理の不備が事故の最大の原因だったとする報告書をまとめた。同校は10月2日、再発防止策を京都府に報告した。
 published: 2026-10-07T22:16:00+09:00
-updated: 2026-10-13T00:07:50+09:00
+updated: 2026-11-01T20:40:00+09:00
 topics: [henoko-boat-capsize]
 kind: timeline
 notices: [allegation, suicide, developing]
 sources:
+  - title: "同志社国際高等学校の沖縄研修旅行中に発生した事故後の対応状況と今後の取組みについて"
+    publisher: "学校法人同志社"
+    url: https://www.doshisha.ed.jp/information/index.php?c=topics_view&pk=1793265860
+    date: 2026-10-30
+    accessed: 2026-11-01
+    kind: primary
+  - title: "10月の沖縄訪問 (下)"
+    publisher: "辺野古ボート転覆事故遺族メモ（遺族のnote）"
+    url: https://note.com/beloved_tomoka/n/n6bae8e276b12
+    date: 2026-10-26
+    accessed: 2026-11-01
+    kind: primary
+  - title: "【辺野古沖転覆事故】遺族と初面会した抗議船運航の団体「背景事実の質問に満足に回答できず」遺族は「検証進んでいない」と１時間で切り上げ"
+    publisher: "MBSニュース（ライブドアニュース配信）"
+    url: https://news.livedoor.com/article/detail/32677716/
+    date: 2026-10-28
+    accessed: 2026-11-01
+    kind: news
+  - title: "【辺野古転覆事故】同志社が検討委員会を設置　県議会調査委では遺族の招致を協議"
+    publisher: "沖縄テレビ（FNNプライムオンライン）"
+    url: https://www.fnn.jp/articles/-/1143258
+    date: 2026-10-30
+    accessed: 2026-11-01
+    kind: news
+  - title: "県の執行部に聞き取り　県議会の辺野古沖船舶転覆事故調査特別委員会"
+    publisher: "琉球朝日放送"
+    url: https://www.qab.co.jp/news/?p=309373
+    date: 2026-10-19
+    accessed: 2026-11-01
+    kind: news
   - title: 令和8年10月9日知事記者会見
     publisher: 京都府
     url: https://www.pref.kyoto.jp/koho/kaiken/2610009.html
@@ -551,11 +581,11 @@ sources:
 
 社説の評価も分かれた。産経新聞は「民主主義の基本に立った文科省の対応は正しい」と書いた（[産経新聞](https://www.sankei.com/article/20260531-VNV25K22PJNHPKSJI4UWZULSC4/)）。朝日新聞は、安全面の指摘は妥当だとしつつ「違法認定に踏み込むのは行き過ぎだ」とし（[朝日新聞](https://www.asahi.com/articles/ASV5V2HKDV5VUSPT009M.html)）、東京新聞も「行き過ぎではないか」と書いた（[東京新聞](https://www.tokyo-np.co.jp/article/491644)）。日本経済新聞は、違反の判断基準が不明確だと疑問を示す一方、研修旅行の内容は「辺野古への基地移設に反対する側の視点に偏っていた」と書いた（[日本経済新聞](https://www.nikkei.com/article/DGXZQOCD26AUX0W6A520C2000000/)）。
 
-同志社の特別調査委員会は、平和学習の内容の適切性を調査の対象外とした。この点は、法人が新たに設ける委員会が検討する。
+同志社の特別調査委員会は、平和学習の内容の適切性を調査の対象外とした。この点について法人は10月22日に別の検討委員会を設置したと発表した（[学校法人同志社](https://www.doshisha.ed.jp/information/index.php?c=topics_view&pk=1793265860)）。
 
 ## 沖縄県議会と知事選
 
-沖縄県議会は7月13日、「辺野古沖船舶転覆事故に関する調査特別委員会」を設けた（[沖縄県議会](https://www.pref.okinawa.jp/kensei/gikai/1016969/1017057.html)）。設置は全会一致で、政治利用につながらないよう求める付帯決議もあわせて可決した（[沖縄八重山日報](https://news.yahoo.co.jp/articles/0044451c37f44507694ca96e58e8e6e6ddf3761b)）。委員会は10月19日に県の担当部局から話を聴く予定で、仲村家治委員長は来年3月までに再発防止のための報告書をまとめたいとしている（[沖縄テレビ](https://news.yahoo.co.jp/articles/fb991f5c7587908a6bf3afd55d0c503e0459cfa7)）。
+沖縄県議会は7月13日、「辺野古沖船舶転覆事故に関する調査特別委員会」を設けた（[沖縄県議会](https://www.pref.okinawa.jp/kensei/gikai/1016969/1017057.html)）。設置は全会一致で、政治利用につながらないよう求める付帯決議もあわせて可決した（[沖縄八重山日報](https://news.yahoo.co.jp/articles/0044451c37f44507694ca96e58e8e6e6ddf3761b)）。10月7日時点では、委員会は10月19日に県の担当部局から話を聴く予定で、仲村家治委員長は来年3月までに再発防止のための報告書をまとめたいとしていた（[沖縄テレビ](https://news.yahoo.co.jp/articles/fb991f5c7587908a6bf3afd55d0c503e0459cfa7)）。
 
 9月13日の知事選について、武石さんの父親は翌日の note に「選挙のあいだ、娘の事件が争点として議論の中心にならなかったことに安堵しました」と書いた。一方で、生徒を海に連れ出す学習の目的と危険の大きさが釣り合っていたのかという疑問も記した。新しい県政には、事故の原因究明と再発防止への協力を求めている（[遺族の note](https://note.com/beloved_tomoka/n/n2ef44ab1f566)）。
 
@@ -576,3 +606,11 @@ sources:
 - 京都府が同志社国際高への私学助成を減らすかどうか。西脇知事は5月22日の会見で「減額をせざるを得ないのではないかと思っています」と述べたが（[京都府](https://www.pref.kyoto.jp/koho/kaiken/260522.html)）、7月31日の会見では、減額の幅は「全く決めていません」と述べた（[京都府](https://www.pref.kyoto.jp/koho/kaiken/260731.html)）。
 - 文科省の有識者会議による、学校の危機管理マニュアルのガイドラインの改訂（[文部科学省](https://www.mext.go.jp/b_menu/daijin/detail/mext_00718.html)）。
 - 協議会が船による海上行動を続けるかどうかと、遺族への直接の謝罪。
+
+## 11月1日の追記：法人会見と遺族面会、県議会の調査
+
+学校法人同志社は10月30日に記者会見し、教育内容を検証する委員会を22日に設けたと発表した（[法人発表](https://www.doshisha.ed.jp/information/index.php?c=topics_view&pk=1793265860)）。詳しくは「[同志社理事長が辺野古沖事故で初会見　教育内容を検証する委員会を設置](../2026-11-01-doshisha-press-conference/)」で伝えている。
+
+父親は18日に協議会の共同代表2人と初めて面会し、検証と公表を求めたと公表した。協議会もMBSニュースに、背景事実の質問へ満足に回答できなかったと説明した（[遺族のnote](https://note.com/beloved_tomoka/n/n6bae8e276b12)、[MBSニュース](https://news.livedoor.com/article/detail/32677716/)）。双方の説明は「[辺野古沖事故の遺族、運航団体と初面会　検証と公表を求める](../2026-11-01-henoko-family-operator-meeting/)」にまとめた。
+
+県議会特別委員会は19日に県の関係部局を聴取し、30日に海上保安庁などを参考人に招くと決めた（[琉球朝日放送](https://www.qab.co.jp/news/?p=309373)、[沖縄テレビ](https://www.fnn.jp/articles/-/1143258)）。知事面会や県の安全研修を含む動きは「[辺野古沖事故受け沖縄県が安全研修　県議会は海保などの招致を決定](../2026-11-01-henoko-okinawa-safety-response/)」で伝えている。
