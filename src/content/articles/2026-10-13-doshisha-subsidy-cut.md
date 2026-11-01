@@ -3,10 +3,23 @@ title: 京都府、同志社国際高の補助金減額　2025年度50%、2026�
 lead: >-
   京都府は10月9日、辺野古沖の船転覆事故を受け、同志社国際高への私学運営費補助金を2025年度分は50%、2026年度分は25%減らすと発表した。交付済みの2025年度分の減額分は返還を求める。府は研修旅行の安全管理が著しく適正を欠いていたと判断し、2026年度分は学校が提出した再発防止策を考慮して減額率を下げた。
 published: 2026-10-13T00:07:50+09:00
+updated: 2026-11-01T20:40:00+09:00
 topics: [henoko-boat-capsize]
 kind: news
 notices: [developing]
 sources:
+  - title: "関芳弘文部科学大臣記者会見録（令和8年10月13日）"
+    publisher: "文部科学省"
+    url: https://www.mext.go.jp/b_menu/daijin/detail/mext_00738.html
+    date: 2026-10-13
+    accessed: 2026-11-01
+    kind: primary
+  - title: "同志社国際高等学校の沖縄研修旅行中に発生した事故後の対応状況と今後の取組みについて"
+    publisher: "学校法人同志社"
+    url: https://www.doshisha.ed.jp/information/index.php?c=topics_view&pk=1793265860
+    date: 2026-10-30
+    accessed: 2026-11-01
+    kind: primary
   - title: 令和8年10月9日知事記者会見
     publisher: 京都府
     url: https://www.pref.kyoto.jp/koho/kaiken/2610009.html
@@ -58,3 +71,9 @@ sources:
 亡くなった生徒の武石知華（ともか）さんの父親は10月10日の[note](https://note.com/beloved_tomoka/n/n80a6082ce088)で、処分を喜ぶ気持ちはないとしたうえで、事故の重さに見合った必要な対応だと受け止めた。学校が保護者宛ての通知で、新たな負担を求めず学びへの支障を避けると約束したことを挙げ、その約束が守られるかを見守ると書いた。
 
 父親は、今回の減額理由が安全管理に限られたことにも触れ、教育の中立性について府が今後どう対応するかを注視すると記した。学校と法人は、教育活動に関する指摘事項について、設置を予定する「教育の中立性及び適切性に関する検討委員会」で検証するとしている（[学校・法人の10月2日の発表](https://www.intnl.doshisha.ac.jp/doshisha-info/?p=7609)）。
+
+## 11月1日の追記：文科相の説明と法人の会見
+
+関芳弘文科相は10月13日の会見で、私立高校の補助金を減らす扱いは減額幅も含めて都道府県が判断すると説明した。同志社大学への国の補助金への影響を問われ、法人の管理体制やガバナンスに関する取組を注視すると述べた（[文部科学省](https://www.mext.go.jp/b_menu/daijin/detail/mext_00738.html)）。
+
+法人は30日に記者会見し、教育の中立性と適切性を検討する委員会を22日に設けたと発表した（[学校法人同志社](https://www.doshisha.ed.jp/information/index.php?c=topics_view&pk=1793265860)）。委員会の構成と再発防止策は「[同志社理事長が辺野古沖事故で初会見　教育内容の検証委設置を発表](../2026-11-01-henoko-safety-and-accountability/#教育内容の検証と理事長の辞任意向)」で伝えている。

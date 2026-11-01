@@ -2,52 +2,56 @@
 title: 外国人の受入れと多文化共生
 label: 外国人政策と共生
 summary: >-
-  外国人を受け入れる政策と、住民として安定して暮らせる条件を追う。日本の育成就労への転換を起点に、韓国・ドイツ・フランス・米国・カナダ・オーストラリアの在留、仕事、家族、生活支援の制度と実態を比較する。
+  日本の外国人受入れ政策と、住民として安定して暮らせる条件を追う。在留許可手数料の改定、介護分野の受入れ配分案、育成就労への転換を、仕事・家族・生活支援の実態と合わせて確かめる。海外の事例は日本の制度を比較して考える材料にする。
 status: active
 started: 2026-10-17
-updated: 2026-10-17
+updated: 2026-11-01
 order: 5
 notices: [developing]
 timeline:
-  - date: 2026-01-01
-    text: "フランスで、対象となる初回の複数年在留カード等に語学水準と市民試験の要件を適用。"
+  - date: 2026-01-23
+    text: "特定技能・育成就労の分野別運用方針を閣議決定。介護分野の受入れ見込数を特定技能1号12万6900人、育成就労3万3800人と設定。"
     sources:
-      - "https://www.service-public.gouv.fr/particuliers/vosdroits/F34501?lang=fr"
-      - "https://www.service-public.gouv.fr/particuliers/vosdroits/F39530"
-  - date: 2026-03-10
-    text: "カナダ政府が、経済区分の永住者と同伴家族の定着支援の利用期間を制限する変更を発表。"
+      - "https://www.moj.go.jp/isa/content/001472908.pdf"
+  - date: 2026-10-01
+    text: "在留資格変更・在留期間更新・永住許可の手数料を改定。同日以後の申請に適用。"
     sources:
-      - "https://www.canada.ca/en/immigration-refugees-citizenship/news/notices/changes-settlement-service-eligibility-economic-immigrants.html"
-  - date: 2026-05-12
-    text: "豪州政府が、2026/27年度（2026年7月〜2027年6月）の永住受入れ計画を18万5000枠と発表。"
+      - "https://www.moj.go.jp/isa/01_00644.html"
+  - date: 2026-10-19
+    text: "政府の有識者会議に、介護の見込数を育成就労から特定技能1号へ2万人分移す案を提示。分野全体の16万700人は維持する案。"
     sources:
-      - "https://immi.homeaffairs.gov.au/what-we-do/migration-program-planning-levels"
-  - date: 2026-06-09
-    text: "米政府説明責任局が、移民収容施設Camp East Montanaの体制や支出に関する監査報告を公表。"
-    sources:
-      - "https://files.gao.gov/reports/GAO-26-108886/index.html"
-  - date: 2026-07-17
-    text: "フランス権利擁護官が、在留審査の遅延と権利への影響に関する調査結果・提言を公表。"
-    sources:
-      - "https://www.defenseurdesdroits.fr/degradation-des-delais-dinstruction-des-titres-de-sejour-la-defenseure-des-droits-publie-un-rapport"
-  - date: 2026-08-01
-    text: "ドイツの統合講座で、法定受講権のない人への認可を空席と優先対象に基づき行う運用を適用。"
-    sources:
-      - "https://www.integrationsbeauftragte.de/integration/sprache/faq-integrationskurse"
-  - date: 2026-09-25
-    text: "米大統領が、2027会計年度の難民受入れを最大1万7500人とする決定を出す。"
-    sources:
-      - "https://www.govinfo.gov/content/pkg/FR-2026-10-02/html/2026-20318.htm"
+      - "https://www.moj.go.jp/isa/03_00204.html"
+      - "https://www.moj.go.jp/isa/content/001472908.pdf"
 watch:
+  - text: 介護分野の配分変更案の正式決定と適用時期、資格取得・在留資格「介護」への移行支援の実績。
+  - text: 在留許可手数料の増収の使途と、減額の申請・適用件数、住民の家計や手続への影響。
   - date: 2027-04-01
     text: 育成就労制度の開始予定。転籍・家族生活・支援の条件が、実際の受入れと暮らしにどう影響するか。
-  - date: 2027-04-01
-    text: カナダの経済区分の永住者および同じ永住申請に含まれる家族について、ケベック州外の連邦定着支援の利用期間を永住取得後5年とする予定。利用と就労への影響を追う。
-  - text: 各国で、一時的な就労・留学から長期在留や永住へ移れる条件と、家族の生活への影響。
+  - text: 日本で就労・留学から長期在留や永住へ移れる条件と家族生活への影響。海外の対応する制度と、対象や定義をそろえて比較する。
   - text: 言語教育、子どもの就学、住宅、医療、相談・差別への救済について、支援の対象・予算・利用実績と地域差。
   - text: 在留更新の待ち時間や収容の実態、公的監査の指摘に対する改善の実施。
   - text: 国・自治体・雇用主の費用と役割、受入れや共生をめぐる主張を検証できる統計・調査。
 sources:
+  - title: 第１５回特定技能制度及び育成就労制度の基本方針及び分野別運用方針に関する有識者会議
+    publisher: 出入国在留管理庁
+    url: https://www.moj.go.jp/isa/03_00204.html
+    accessed: 2026-11-01
+    kind: primary
+  - title: 介護分野における特定技能１号・育成就労の受入れ見込数の配分変更（案）について
+    publisher: 厚生労働省（出入国在留管理庁掲載）
+    url: https://www.moj.go.jp/isa/content/001472908.pdf
+    accessed: 2026-11-01
+    kind: primary
+  - title: 令和８年１０月１日付け在留許可手数料の額の改定等について
+    publisher: 出入国在留管理庁
+    url: https://www.moj.go.jp/isa/01_00644.html
+    accessed: 2026-11-01
+    kind: primary
+  - title: 令和８年１０月１日以降における在留許可手数料の減額措置又は免除措置について
+    publisher: 出入国在留管理庁
+    url: https://www.moj.go.jp/isa/10_00273.html
+    accessed: 2026-11-01
+    kind: primary
   - title: "育成就労制度Ｑ＆Ａ"
     publisher: "出入国在留管理庁"
     url: "https://www.moj.go.jp/isa/applications/faq/ikusei_qa_00002.html"
@@ -134,19 +138,29 @@ sources:
 
 ## いまの状況
 
-外国人の受入れ政策は、働く人を確保する制度だけではない。在留の更新、家族との生活、子どもの教育、言語の学習、住まい、医療、地域社会への参加をどう支えるかも含む。日本を起点に、韓国、ドイツ、フランス、米国、カナダ、オーストラリアの政策と社会の実態を追う。
+日本の外国人受入れ政策は、働く人を確保する制度だけではない。在留の更新、家族との生活、子どもの教育、言語の学習、住まい、医療、地域社会への参加をどう支えるかも含む。このトピックは日本の政策と暮らしの実態を中心に追い、海外の事例を日本の制度の特徴や選択肢を考える材料にする。
 
-日本は2027年4月、技能実習に代わる[育成就労制度](https://www.moj.go.jp/isa/applications/faq/ikusei_qa_00002.html)を始める予定だ。本人の希望による転籍を一定条件で認める一方、家族の帯同は原則認めない。カナダの[2026〜2028年計画](https://www.canada.ca/en/immigration-refugees-citizenship/corporate/immigration-system/levels/supplementary-immigration-levels-2026-2028.html)や豪州の[永住受入れ計画](https://immi.homeaffairs.gov.au/what-we-do/migration-program-planning-levels)は、国外からの受入れと、国内で暮らす人の永住移行を分けている。
+10月からは、[在留資格変更・在留期間更新・永住許可の手数料](https://www.moj.go.jp/isa/01_00644.html)が改定された。[生活困窮などに基づく減額](https://www.moj.go.jp/isa/10_00273.html)には、生活困窮と人道上の配慮の両方が必要で、窓口で資料を提出する。永住許可の減額対象には、配偶者や子などの限定もある。金額や条件は[手数料についての記事](../../articles/2026-11-01-japan-residence-and-care-policy/#permit-fees)で整理した。
+
+10月19日の[有識者会議](https://www.moj.go.jp/isa/03_00204.html)には、介護分野の見込数を育成就労から特定技能1号へ2万人分移す[配分変更案](https://www.moj.go.jp/isa/content/001472908.pdf)が示された。分野全体の16万700人は変えない案だ。[記事の介護分野の節](../../articles/2026-11-01-japan-residence-and-care-policy/#care-quota)で、理由と対象時期を伝えている。
+
+日本は2027年4月、技能実習に代わる[育成就労制度](https://www.moj.go.jp/isa/applications/faq/ikusei_qa_00002.html)を始める予定だ。本人の希望による転籍を一定条件で認める一方、家族の帯同は原則認めない。
 
 ## このトピックで追うこと
 
-多文化共生社会を目指す立場から、国籍や出身にかかわらず安定して暮らせる条件を調べる。政府の政策目標と実施結果を分け、外国人住民、自治体、雇用主、地域社会の状況を確かめる。
+多文化共生社会を目指す立場から、日本で国籍や出身にかかわらず安定して暮らせる条件を調べる。政府の政策目標と実施結果を分け、外国人住民、自治体、雇用主、地域社会の状況を確かめる。
 
 - **受入れと在留の安定**：誰がどの経路で入れるか、仕事を変えられるか、家族と暮らせるか、長期在留や永住へ移れるか。
 - **生活と権利**：言語、教育、住まい、医療、相談や差別への救済に実際につながるか。
 - **政策の実施と負担**：国・自治体・企業が何を担い、どれだけの費用を使い、誰に支援が届いているか。
 
-制度と実態をつなぐ資料として、日本の[在留外国人調査](https://www.moj.go.jp/isa/content/001472177.pdf)は住まい探しなどの経験を、ドイツの[IABの研究](https://iab.de/presseinfo/10-jahre-fluchtmigration-beschaeftigungsquote-von-gefluechteten-naehert-sich-dem-durchschnitt-in-deutschland-an/)は保護を求めて来た人々の就労を扱う。フランスの[権利擁護官の調査発表](https://www.defenseurdesdroits.fr/degradation-des-delais-dinstruction-des-titres-de-sejour-la-defenseure-des-droits-publie-un-rapport)は、在留更新の遅れが就労・住居・家族生活に及ぼす影響を指摘している。
+制度と実態をつなぐ資料として、日本の[在留外国人調査](https://www.moj.go.jp/isa/content/001472177.pdf)は住まい探しなどの経験を扱う。今後、制度の対象と実際の利用、地域差、国・自治体・雇用主の費用を併せて確かめる。
+
+## 海外の事例をどう参照するか
+
+国外からの受入れと、国内ですでに暮らす人の在留の安定を分ける視点として、カナダの[2026〜2028年計画](https://www.canada.ca/en/immigration-refugees-citizenship/corporate/immigration-system/levels/supplementary-immigration-levels-2026-2028.html)や豪州の[永住受入れ計画](https://immi.homeaffairs.gov.au/what-we-do/migration-program-planning-levels)を参照する。在留更新を生活の問題として考える材料には、就労・住居・家族生活への影響を指摘したフランスの[権利擁護官の調査発表](https://www.defenseurdesdroits.fr/degradation-des-delais-dinstruction-des-titres-de-sejour-la-defenseure-des-droits-publie-un-rapport)がある。
+
+就労支援の結果をどう確かめるかについては、保護を求めて来た人々の就労を扱うドイツの[IABの研究](https://iab.de/presseinfo/10-jahre-fluchtmigration-beschaeftigungsquote-von-gefluechteten-naehert-sich-dem-durchschnitt-in-deutschland-an/)も比較材料になる。日本を含む[7カ国の初回解説](../../articles/2026-10-17-migration-coexistence-seven-countries/)は、こうした比較の起点として読める。
 
 ## 数字と制度の読み方
 
