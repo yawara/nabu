@@ -609,8 +609,8 @@ sources:
 
 ## 11月1日の追記：法人会見と遺族面会、県議会の調査
 
-学校法人同志社は10月30日に記者会見し、教育内容を検証する委員会を22日に設けたと発表した（[法人発表](https://www.doshisha.ed.jp/information/index.php?c=topics_view&pk=1793265860)）。詳しくは「[同志社理事長が辺野古沖事故で初会見　教育内容を検証する委員会を設置](../2026-11-01-doshisha-press-conference/)」で伝えている。
+学校法人同志社は10月30日に記者会見し、教育内容を検証する委員会を22日に設けたと発表した（[法人発表](https://www.doshisha.ed.jp/information/index.php?c=topics_view&pk=1793265860)）。会見と検証委員会については「[同志社理事長が辺野古沖事故で初会見　教育内容の検証委設置を発表](../2026-11-01-henoko-safety-and-accountability/#教育内容の検証と理事長の辞任意向)」で伝えている。
 
-父親は18日に協議会の共同代表2人と初めて面会し、検証と公表を求めたと公表した。協議会もMBSニュースに、背景事実の質問へ満足に回答できなかったと説明した（[遺族のnote](https://note.com/beloved_tomoka/n/n6bae8e276b12)、[MBSニュース](https://news.livedoor.com/article/detail/32677716/)）。双方の説明は「[辺野古沖事故の遺族、運航団体と初面会　検証と公表を求める](../2026-11-01-henoko-family-operator-meeting/)」にまとめた。
+父親は18日に協議会の共同代表2人と初めて面会し、検証と公表を求めたと公表した。協議会もMBSニュースに、背景事実の質問へ満足に回答できなかったと説明した（[遺族のnote](https://note.com/beloved_tomoka/n/n6bae8e276b12)、[MBSニュース](https://news.livedoor.com/article/detail/32677716/)）。双方の説明は続報の「[運航団体への検証要求と初面会](../2026-11-01-henoko-safety-and-accountability/#運航団体への検証要求と初面会)」にまとめた。
 
-県議会特別委員会は19日に県の関係部局を聴取し、30日に海上保安庁などを参考人に招くと決めた（[琉球朝日放送](https://www.qab.co.jp/news/?p=309373)、[沖縄テレビ](https://www.fnn.jp/articles/-/1143258)）。知事面会や県の安全研修を含む動きは「[辺野古沖事故受け沖縄県が安全研修　県議会は海保などの招致を決定](../2026-11-01-henoko-okinawa-safety-response/)」で伝えている。
+県議会特別委員会は19日に県の関係部局を聴取し、30日に海上保安庁などを参考人に招くと決めた（[琉球朝日放送](https://www.qab.co.jp/news/?p=309373)、[沖縄テレビ](https://www.fnn.jp/articles/-/1143258)）。知事面会や県の安全対策については続報の「[県への要望と安全ガイドライン](../2026-11-01-henoko-safety-and-accountability/#県への要望と安全ガイドライン)」で伝えている。
